@@ -1,0 +1,11 @@
+{
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light",
+  "titleBarColor": "#ffffff",
+  "defaultTitle": "授权登录",
+  "usingComponents": {
+    "title": "mini-ali-ui-rpx/es/title/index",
+    "popup": "mini-ali-ui-rpx/es/popup/index"
+  }
+}

@@ -1,0 +1,45 @@
+<view class="login subwe_Z1ihayn">
+  <image class="login_img_1" mode="aspectFill" src="https://www.xiaohulaile.com/wxcx/logo.png">
+  </image>
+  <image class="login_img_2" src="https://www.xiaohulaile.com/wxcx/slogen.png">
+  </image>
+  <view class="login_view" open-type="getUserInfo" onTap="loginWx">
+    <button class="Wx_login">
+      <image src="https://www.xiaohulaile.com/wxcx/Wx.png">
+      </image>
+      <text>
+        微信用户快捷登录
+      </text>
+    </button>
+  </view>
+  <view class="phone_login" onTap="loginIphone">
+    <image src="https://www.xiaohulaile.com/wxcx/iphone.png">
+    </image>
+    <text>
+      手机号登陆 / 注册
+    </text>
+  </view>
+  <view class="YH_login" onTap="userAgreementC">
+    <text>
+      点击　“注册/登录”　即表示您同意
+      <text class="Text_1">
+        《上海小护来了用户协议》、《服务条款》,
+      </text>小护来了向您保证：您的隐私绝不会外泄，请放心注册使用。
+    </text>
+  </view>
+</view>
+<view class="cu-modal {{modalName=='1'?'show':''}} subwe_Z1ihayn">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      <view class="action" onTap="hideModal">
+        <text class="cuIcon-close text-red">
+        </text>
+      </view>
+    </view>
+    <view class="padding-xl">
+      <button open-type="getAuthorize" scope="phoneNumber" onGetAuthorize="getPhoneNumber">
+        获取手机号
+      </button>
+    </view>
+  </view>
+</view>

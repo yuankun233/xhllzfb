@@ -1,0 +1,86 @@
+<view class="file subwe_1XDOkW">
+  <view class="JBXX">
+    基本信息
+  </view>
+  <view class="file_I">
+    <view>
+      姓名
+    </view>
+    <input class="file_I_1 CC" value="{{name}}" type="text" placeholder-class="CC" placeholder="请填写真实姓名" onInput="nameFn">
+    </input>
+  </view>
+  <view class="file_I">
+    <view class="sex_1">
+      性别
+    </view>
+    <radio-group onChange="radioChange">
+      <label class="sex">
+        <radio color="#fff" value="1" checked="{{sex==1?true:false}}">
+        </radio>
+        <text>
+          男
+        </text>
+      </label>
+      <label class="sex">
+        <radio color="#fff" value="2" checked="{{sex==2?true:false}}">
+        </radio>
+        <text>
+          女
+        </text>
+      </label>
+    </radio-group>
+  </view>
+  <view class="file_I">
+    <view class="file_I_CS">
+      年龄
+    </view>
+    <input value="{{date}}" class="file_I_2 file_I_number CC aa" placeholder-class="CC" placeholder="请输入" type="number" maxlength="3" onInput="dataFn">
+    </input>
+    <image class="file_I_cc" src="../../images/you.png">
+    </image>
+  </view>
+  <view class="file_I">
+    <view>
+      联系电话/手机
+    </view>
+    <input class="file_I_2 file_I_number CC" value="{{number}}" type="number" maxlength="11" placeholder-class="CC" placeholder="请输入" onInput="numberFn">
+    </input>
+    <image class="file_I_cc" src="../../images/you.png">
+    </image>
+  </view>
+  <view class="file_I" onTap="openSelect">
+    <view class="file_I_dz">
+      地址
+    </view>
+    <view class="page-section" >
+      <input class="page-section_1" name="input" disabled placeholder="省份、城市、区县" value="{{region}}" class="select-input"/>
+    </view>
+    <address-picker visible="{{pickerVisible}}" onChange="addressPickerChange"></address-picker>
+    <!---->
+  </view>
+  <view class="file_I">
+    <view class="file_I_dz mm">
+      详情地址
+    </view>
+    <input value="{{address}}" class="file_I_2 file_I_number CC" placeholder="请输入" placeholder-class="CC" type="text" onInput="addressFn">
+    </input>
+  </view>
+  <view class="file_bottom">
+    <view class="file_bottom_1">
+      <view>
+        疾病信息
+      </view>
+      <text>
+        （护士填写）
+      </text>
+    </view>
+    <textarea value="{{text}}" placeholder="请输入" maxlength="50" name="textarea" onInput="textFn">
+    </textarea>
+  </view>
+  <view class="push" a:if="{{bj}}" onTap="CUser">
+    修改
+  </view>
+  <view class="push" a:else onTap="addUser">
+    立即添加
+  </view>
+</view>

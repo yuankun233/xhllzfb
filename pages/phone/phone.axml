@@ -1,0 +1,25 @@
+<view class="phone subwe_1dzcKs">
+  <view class="phone_1">
+    小护来了欢迎你
+  </view>
+  <view class="input">
+    <input type="number" placeholder="输入手机号" placeholder-class="AA" value="{{phone}}" maxlength="11" style="width:800rpx" onInput="getphone">
+    </input>
+  </view>
+  <view class="input">
+    <input type="number" placeholder="输入验证码" placeholder-class="AA" value="{{Index}}" maxlength="4" onInput="Code_YN">
+    </input>
+    <text a:if="{{!isGetCode}}" onTap="getCode">
+      获取验证码
+    </text>
+    <text a:else>
+      {{time}}秒后重试
+    </text>
+  </view>
+  <button class="cu-btn lg button_1" a:if="{{!isLogin}}">
+    登录
+  </button>
+  <button class="cu-btn lg button_2" open-type="getAuthorize" a:else onTap="loginFn" scope="userInfo">
+    登录
+  </button>
+</view>

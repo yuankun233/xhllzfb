@@ -1,0 +1,117 @@
+<view class="my subwe_Z2dmkWW">
+  <view class="my_top">
+    <view class="my_head">
+      <image src="{{user.head_logo}}">
+      </image>
+    </view>
+    <view class="my_DLL">
+    </view>
+    <view class="username">
+      {{user.nickname}}
+    </view>
+    <view class="my_top_1">
+      <view class="my_top_11 Tleft">
+        <view class="num">
+          0
+        </view>
+        <view class="AA" onTap="zwFn">
+          我的关注
+        </view>
+      </view>
+      <view class="my_top_11">
+        <view class="num">
+          0
+        </view>
+        <view class="AA" onTap="zwFn">
+          优惠券
+        </view>
+      </view>
+      <view class="my_top_11 Tright">
+        <view class="num">
+          0
+        </view>
+        <view class="AA">
+          积分
+        </view>
+      </view>
+    </view>
+    <view class="GG G_1">
+    </view>
+    <view class="GG G_2">
+    </view>
+  </view>
+  <view class="my_center">
+    <view class="my_center_1">
+      <view class="my_order">
+        我的订单
+      </view>
+      <view class="my_C_1">
+        <view data-id="1" class="my_C_11" onTap="goOurder">
+          <image class="img_1" src="https://www.xiaohulaile.com/wxcx/gou4.png">
+          </image>
+          <view>
+            待付款
+          </view>
+          <view class="jiaobiao3" a:if="{{statusnum1 > 0}}">
+            {{statusnum1}}
+          </view>
+        </view>
+        <view data-id="2" class="my_C_11" onTap="goOurder">
+          <image class="img_2" src="https://www.xiaohulaile.com/wxcx/gou3.png">
+          </image>
+          <view>
+            待服务
+          </view>
+          <view class="jiaobiao1" a:if="{{statusnum > 0}}">
+            {{statusnum}}
+          </view>
+        </view>
+        <view data-id="3" class="my_C_11" onTap="goOurder">
+          <image class="img_3" src="https://www.xiaohulaile.com/wxcx/gou2.png">
+          </image>
+          <view>
+            待评价
+          </view>
+          <view class="jiaobiao2" a:if="{{statusnum2 > 0}}">
+            {{statusnum2}}
+          </view>
+        </view>
+        <view data-id="0" class="my_C_11" onTap="goOurder">
+          <image class="img_4" src="https://www.xiaohulaile.com/wxcx/gou1.png">
+          </image>
+          <view>
+            全部订单
+          </view>
+        </view>
+      </view>
+      <view class="JKda">
+        健康档案
+      </view>
+      <view class="jkda_1" onTap="goFile">
+        <image class="jkda_11" src="https://www.xiaohulaile.com/wxcx/gou22.png">
+        </image>
+        <view class="jkda_12">
+          健康档案必填
+        </view>
+        <image class="jkda_13" src="https://www.xiaohulaile.com/wxcx/gou21.png">
+        </image>
+        <view class="jkda_14">
+          就诊人管理({{user.archive_num}})
+        </view>
+      </view>
+    </view>
+    <view class="my_center_2" onTap="zwFn">
+      <image src="https://www.xiaohulaile.com/wxcx/vip.png">
+      </image>
+    </view>
+  </view>
+  <view class="my_bottom">
+    <view class="my_bottom_1" onTap="goSpecialty">
+      <image src="https://www.xiaohulaile.com/wxcx/gou23.png">
+      </image>
+      <view>
+        客服中心
+      </view>
+    </view>
+  </view>
+</view>

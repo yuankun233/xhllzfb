@@ -1,0 +1,70 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/loginzfb/loginzfb",
+    "pages/login/login",
+    "pages/fill/Fill",
+    "pages/phone/phone",
+    "pages/message/message",
+    "pages/message_details/message_details",
+    "pages/merchant/merchant",
+    "pages/merdetails/merdetails",
+    "pages/my/my",
+    "pages/map/map",
+    "pages/file/file",
+    "pages/order/order",
+    "pages/specialty/specialty",
+    "pages/appointment/appointment",
+    "pages/order/order_eight/order_eight",
+    "pages/order/order_item/order_item",
+    "pages/file/file_y/file_y",
+    "pages/order/order_details/order_details",
+    "pages/aboutus/aboutus",
+    "pages/scancode/scancode",
+    "pages/start/start"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "black",
+    "titleBarColor": "#fff",
+    "defaultTitle": "Weixin"
+  },
+  "tabBar": {
+    "selectedColor": "#4178f0",
+    "borderStyle": "white",
+    "textColor": "#b2b2b2",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "icon": "/images/index/1-1.png",
+        "activeIcon": "/images/index/1.png",
+        "name": "首页"
+      },
+      {
+        "pagePath": "pages/merchant/merchant",
+        "icon": "/images/index/2-1.png",
+        "activeIcon": "/images/index/2.png",
+        "name": "机构"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "icon": "/images/index/3.png",
+        "activeIcon": "/images/index/3-1.png",
+        "name": "健康"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "icon": "/images/index/4.png",
+        "activeIcon": "/images/index/4-1.png",
+        "name": "我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

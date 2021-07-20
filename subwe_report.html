@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>检测结果报告</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        color: rgba(0,0,0,.85);
+        font-size: 14px;
+        background-color: #fff;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+      }
+      h1 {
+        text-align: center;
+        font-weight: 300;
+        color: rgba(0,0,0,.85);
+      }
+      .container {
+        padding: 0 32px;
+      }
+      ul li {
+        list-style: none;
+      }
+      .tabbar {
+        padding: 0;
+        height: 46px;
+        line-height: 46px;
+        position: relative;
+      }
+      .tabbar::before {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      .tabbar li {
+        position: relative;
+        margin: 0 32px 0 0;
+        display: inline-block;
+        color: rgba(0,0,0,.85);
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .tabbar li.active {
+        color: #1890ff;
+        font-weight: 500;
+      }
+      .tabbar li.active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border-bottom: 2px solid #1890ff;
+      }
+      .table-content {
+        padding: 0 28px;
+        color: #333;
+      }
+      .table-content table {
+        width: 100%;
+      }
+      .table-thead tr {
+        height: 40px;
+        background-color: #fafafa;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      .table-cell {
+        width: 30%;
+      }
+      .table-thead > tr > th {
+        padding-left: 4px;
+        text-align: left;
+      }
+      .table-tbody > tr {
+        height: 50px;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      .table-tbody > tr > td {
+        border-bottom: 1px solid #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>转换结果报告</h1>
+      <div class="container">
+        <ul class="tabbar">
+          <li class="tab-item active" data-current="api">JSAPI</li>
+          <li class="tab-item" data-current="component">组件</li>
+          <li class="tab-item" data-current="framework">框架</li>
+        </ul>
+      </div>
+      <div class="list" style="display: block" data-type="api">
+              <div class="table-container">
+                <div class="table-content">
+                  <table>
+                    <thead class="table-thead">
+                      <tr>
+                        <th class="table-cell">问题描述</th>
+                        <th class="table-cell">问题所在文件</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-tbody">
+                      <tr>
+                        <td class="value">getUserProfile</td>
+                        <td class="value">pages\login\login.js</td>
+                      </tr>
+                      <tr>
+                        <td class="value">requestPayment</td>
+                        <td class="value">pages\order\order_details\order_details.js</td>
+                      </tr>
+                      <tr>
+                        <td class="value">requestPayment</td>
+                        <td class="value">pages\order\order_eight\order_eight.js</td>
+                      </tr>
+                      <tr>
+                        <td class="value">requestPayment</td>
+                        <td class="value">pages\order\order_item\order_item.js</td>
+                      </tr>
+                      <tr>
+                        <td class="value">getUserProfile</td>
+                        <td class="value">pages\phone\phone.js</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+      </div>
+      <div class="list" style="display: none" data-type="component">
+              <div class="table-container">
+                <div class="table-content">
+                  <table>
+                    <thead class="table-thead">
+                      <tr>
+                        <th class="table-cell">问题描述</th>
+                        <th class="table-cell">问题所在文件</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-tbody">
+                      <tr>
+                        <td class="value">picker.mode</td>
+                        <td class="value">pages\file\file.wxml</td>
+                      </tr>
+                      <tr>
+                        <td class="value">input.cursor-spacing</td>
+                        <td class="value">pages\index\index.wxml</td>
+                      </tr>
+                      <tr>
+                        <td class="value">picker.mode</td>
+                        <td class="value">pages\order\order_eight\order_eight.wxml</td>
+                      </tr>
+                      <tr>
+                        <td class="value">picker.mode</td>
+                        <td class="value">pages\order\order_item\order_item.wxml</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+      </div>
+      <div class="list" style="display: none" data-type="framework">
+              <div class="table-container">
+                <div class="table-content">
+                  <table>
+                    <thead class="table-thead">
+                      <tr>
+                        <th class="table-cell">问题描述</th>
+                        <th class="table-cell">问题所在文件</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-tbody">
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+      </div>
+    </div>
+    <script>
+      document.querySelector('.tabbar').addEventListener('click', function(e) {
+        if ([].includes.call(e.target.classList, 'active') || !e.target.dataset.current) {
+          return;
+        }
+        document.querySelectorAll('.tab-item').forEach(function(ele) {
+          ele.classList.remove('active');
+        })
+        e.target.classList.add('active');
+        document.querySelectorAll('.list').forEach(function(ele) {
+          if (ele.dataset.type === e.target.dataset.current) {
+            ele.style.display = 'block'
+          } else {
+            ele.style.display = 'none'
+          }
+        })
+        current = e.target.dataset.current;
+      })
+    </script>
+  </body>
+</html>

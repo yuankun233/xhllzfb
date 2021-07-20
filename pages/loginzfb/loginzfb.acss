@@ -1,0 +1,86 @@
+.loginzfb {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.loginzfbimg1 {
+  width: 168rpx;
+  height: 288rpx;
+  margin: 0 auto;
+  display: block;
+  margin-top: 100rpx
+}
+
+.loginzfbimg2 {
+  width: 168rpx;
+  height: 91rpx;
+  display: block;
+  margin: 0 auto;
+  margin-top: 55rpx;
+}
+
+.zfb_dl {
+  width: 608rpx;
+  height: 83rpx;
+  font-size: 31rpx;
+  font-family: DengXian;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 65rpx;
+  background-color: #108EE8;
+  text-align: center;
+  line-height: 83rpx;
+  margin: 0 auto;
+  margin-top: 168rpx;
+}
+
+.zfb_dlsj {
+  width: 608rpx;
+  height: 83rpx;
+  font-size: 31rpx;
+  font-family: DengXian;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 65rpx;
+  background-color: #108EE8;
+  text-align: center;
+  line-height: 83rpx;
+  margin: 0 auto;
+  margin-top: 24rpx;
+}
+
+.text{
+  padding:0rpx 70rpx;
+  margin-top: 10rpx;
+}
+.Text_1{
+  color: #FFA400;
+}
+.xieyi {
+  margin-top: 20rpx;
+  font-family: PingFang-SC-Medium;
+  font-size: 20rpx;
+  color: #cccccc;
+}
+.btn-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-container button {
+  width: 250px;
+}
+
+.box.top, .box.bottom {
+  height: 200px;
+}
+.box {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

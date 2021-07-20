@@ -1,0 +1,21 @@
+<view class="appointment subwe_Z6mNx1">
+  <view class="appointment_1" data-id="{{item.id}}" a:for="{{list}}" a:key="{{index}}" onTap="goOrder">
+    <image src="{{item.map}}">
+    </image>
+    <view class="appointment_11">
+      {{item.title}}护理护士上门服务居家照护便捷服务
+    </view>
+    <view class="appointment_13">
+      ￥{{item.price}}
+    </view>
+    <view class="appointment_14">
+      赠送服务
+    </view>
+    <view class="appointment_15">
+      {{item.order_num}}人付款
+    </view>
+    <view class="appointment_16">
+      ...
+    </view>
+  </view>
+</view>

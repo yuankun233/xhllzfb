@@ -1,0 +1,147 @@
+<view class="order_details subwe_cNkrX">
+  <view class="order_address">
+    <view class="addres_top">
+      <image src="https://www.xiaohulaile.com/wxcx/ditu.png">
+      </image>
+      <view class="top_name"  style="display:inline-block;" ref="__subweSaveRef__">
+        服务人：{{list.archivename}}
+      </view>
+      <view class="top_phone" style="display:inline-block;" ref="__subweSaveRef__">
+        {{list.archivephone}}
+      </view>
+    </view>
+    <view class="order_bottoms">
+      地址：{{list.archiveaddress}}
+    </view>
+  </view>
+  <view class="order_list">
+    <view class="list_modelname">
+      上海小护来了 精准居家照护平台
+    </view>
+    <view class="list_details">
+      <image src="{{list.pic_url}}">
+      </image>
+      <view class="list_content">
+        <view class="list_title">
+          {{list.body}}
+        </view>
+        <view class="list_type">
+          {{list.body}}
+        </view>
+        <view class="list_price" ref="__subweSaveRef__">
+          ￥{{list.project_price}}
+        </view>
+        <view class="list_additional" ref="__subweSaveRef__">
+          赠送服务
+        </view>
+        <view class="list_num" ref="__subweSaveRef__">
+          x{{list.num}}
+        </view>
+      </view>
+    </view>
+    <view class="hr">
+    </view>
+    <view class="list_chose">
+      已选：{{list.body}}
+    </view>
+    <view class="list_workuser" a:if="{{list.attend_id!==null}}">
+      护理人员：王小蒙
+    </view>
+  </view>
+  <view class="order_info">
+    <view class="list_time">
+      订单信息
+      <view class="time_right" ref="__subweSaveRef__">
+        <image style="width:44rpx;height:39rpx;" src="../../../images/index/kf.png">
+        </image>
+        <text>
+          联系客服
+        </text>
+      </view>
+    </view>
+    <view class="list_time">
+      订单编号
+      <view class="time_right" ref="__subweSaveRef__">
+        <text>
+          {{list.out_trade_no}}
+        </text>
+      </view>
+    </view>
+    <view class="list_time" style="margin-bottom:21rpx">
+      创建时间
+      <view class="time_right" ref="__subweSaveRef__">
+        <text>
+          2021-03-17 10:07:20
+        </text>
+      </view>
+    </view>
+    <view class="hr">
+    </view>
+    <view class="list_time">
+      订单金额
+      <view class="time_right" ref="__subweSaveRef__">
+        <text>
+          ￥{{list.project_price}}
+        </text>
+      </view>
+    </view>
+    <view class="list_time" style="margin-top:25rpx;">
+      总价
+      <view class="time_right" ref="__subweSaveRef__">
+        <text style="font-size: 28rpx;font-family: PingFang SC;font-weight: 400;color: #4178F0;">
+          ￥{{list.total_fee}}
+        </text>
+      </view>
+    </view>
+  </view>
+  <view class="order_bottom" a:if="{{list.status==2}}">
+    <view class="button_right" onTap="shows">
+      退款
+    </view>
+  </view>
+  <view class="order_bottom" a:if="{{list.status==1}}">
+    <view class="button_right" onTap="payFnZfb">
+      去支付
+    </view>
+    <view class="button_right" style="background-color:#fff;color:#c1c1c1;border:1rpx solid #c1c1c1;" onTap="quxiao">
+      取消订单
+    </view>
+  </view>
+  <view class="cu-modal {{modalName=='Modal'?'show':''}}">
+    <view class="modal">
+      <view class="modal_1">
+        退款须知
+      </view>
+      <view class="modal_2">
+        <view class="modal_21">
+          小护来了居家服务退款须知
+        </view>
+        <view class="modal_22">
+          用此护理项目需家属陪同，如家属无法陪同请慎用此护理服务；
+          如服务人员接单后用户取消订单，服务开始前3小时全额退款，如服务开始前3小时内退单，则平台会收取50%的服务费，如服务人员已经出发在路上，不予退款。
+          如有问题，请联系客服热线400-9155-291。
+        </view>
+        <view class="modal_23">
+          <checkbox-group onChange="checkboxChange">
+            <checkbox value="1">
+            </checkbox>
+          </checkbox-group>
+          <view>
+            勾选即表示同意“退款须知”内容
+          </view>
+        </view>
+      </view>
+      <view class="modal_3">
+        <view class="modal_31" onTap="hideModal">
+          取消
+        </view>
+        <view data-target="bottomModal" class="modal_32" a:if="{{checkbox.length==1}}" onTap="refund">
+          同意
+        </view>
+        <view class="modal_32" a:else>
+          同意
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,60 @@
+.subwe_1dzcKs.phone, .subwe_1dzcKs .phone {
+  padding-top: 136.5rpx;
+}
+
+.subwe_1dzcKs.phone .phone_1, .subwe_1dzcKs .phone .phone_1 {
+  font-family: SourceHanSansCN-Medium;
+  font-size: 60rpx;
+  color: #343434;
+  font-weight: 700;
+  margin-left: 37rpx;
+  margin-bottom: 60rpx;
+}
+
+.subwe_1dzcKs.phone .input, .subwe_1dzcKs .phone .input {
+  display: flex;
+  width: 670rpx;
+  border-bottom: 1px solid #cccccc;
+  height: 90rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+}
+
+.subwe_1dzcKs.phone .input input, .subwe_1dzcKs .phone .input input {
+  display: block;
+  width: 500rpx;
+  height: 90rpx;
+}
+
+.subwe_1dzcKs.phone .input text, .subwe_1dzcKs .phone .input text {
+  color: #54ae68;
+  line-height: 90rpx;
+  font-size: 32rpx;
+}
+
+.subwe_1dzcKs.phone .input .AA, .subwe_1dzcKs .phone .input .AA {
+  font-size: 32rpx;
+  line-height: 90rpx !important;
+}
+
+.subwe_1dzcKs.phone .button_1, .subwe_1dzcKs .phone .button_1 {
+  display: block;
+  width: 668rpx;
+  border-radius: 46rpx;
+  background-color: #cfcfcf;
+  margin: 0 auto;
+  margin-top: 60rpx;
+  height: 92rpx;
+  line-height: 92rpx;
+}
+
+.subwe_1dzcKs.phone .button_2, .subwe_1dzcKs .phone .button_2 {
+  display: block;
+  width: 668rpx;
+  border-radius: 46rpx;
+  background-color: #46b82d;
+  margin: 0 auto;
+  margin-top: 60rpx;
+  height: 92rpx;
+  line-height: 92rpx;
+}

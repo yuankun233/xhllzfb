@@ -1,0 +1,22 @@
+page {
+  overflow-x: hidden;
+}
+
+input {
+  cursor: auto;
+  display: block;
+  height: 22px;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
+  min-height: 22px;
+  background-color: initial;
+  padding: initial;
+  color: initial;
+  box-sizing: initial;
+}
+
+button {
+  border: none;
+  height: initial;
+}

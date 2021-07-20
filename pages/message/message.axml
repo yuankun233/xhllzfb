@@ -1,0 +1,120 @@
+<view class="message subwe_ZOrhTe">
+  <view class="message_rec">
+    <image src="../../images/index/tuijian.png">
+    </image>
+    <view>
+      每日推荐
+    </view>
+  </view>
+  <view class="message_banner">
+    <navigator url="/pages/message_details/message_details?id=1">
+      <image src="../../images/index/recbanner.png">
+      </image>
+      <view>
+        关于高血压，你知道多少?
+      </view>
+    </navigator>
+  </view>
+  <navigator url="/pages/message_details/message_details?id=2">
+    <view class="message_list">
+      <view class="list_left">
+        <view class="list_title">
+          "香椿有毒不能吃"…这些与春天相关的传言都是真的吗？
+        </view>
+        <view class="list_dz">
+          <image src="../../images/index/dianzan.png">
+          </image>
+          <view class="a_b">
+            3.62w
+          </view>
+        </view>
+        <view class="list_dz">
+          <image src="../../images/index/shoucang.png">
+          </image>
+          <view class="a_b">
+            841
+          </view>
+        </view>
+        <view class="list_dz">
+          <image src="../../images/index/pinglun.png">
+          </image>
+          <view class="a_b">
+            32
+          </view>
+        </view>
+      </view>
+      <view class="list_right">
+        <image src="../../images/index/py.jpg">
+        </image>
+      </view>
+    </view>
+  </navigator>
+  <navigator url="/pages/message_details/message_details?id=3">
+    <view class="message_list">
+      <view class="list_left">
+        <view class="list_title">
+          老年痴呆早期的症状识别，这个疾病尽早的就医、尽早的干预非常重要
+        </view>
+        <view class="list_dz">
+          <image src="../../images/index/dianzan.png">
+          </image>
+          <view class="a_b">
+            0.62w
+          </view>
+        </view>
+        <view class="list_dz">
+          <image src="../../images/index/shoucang.png">
+          </image>
+          <view class="a_b">
+            10
+          </view>
+        </view>
+        <view class="list_dz">
+          <image src="../../images/index/pinglun.png">
+          </image>
+          <view class="a_b">
+            3
+          </view>
+        </view>
+      </view>
+      <view class="list_right">
+        <image src="../../images/index/cd.jpg">
+        </image>
+      </view>
+    </view>
+  </navigator>
+  <navigator url="/pages/message_details/message_details?id=4">
+    <view class="message_list">
+      <view class="list_left">
+        <view class="list_title">
+          初级的骨质疏松预防是对于有骨质疏松症高危因素的这一大类人开始。人体的骨质都是处在一个代谢平衡的状态的。
+        </view>
+        <view class="list_dz">
+          <image src="../../images/index/dianzan.png">
+          </image>
+          <view class="a_b">
+            3.62w
+          </view>
+        </view>
+        <view class="list_dz">
+          <image src="../../images/index/shoucang.png">
+          </image>
+          <view class="a_b">
+            841
+          </view>
+        </view>
+        <view class="list_dz">
+          <image src="../../images/index/pinglun.png">
+          </image>
+          <view class="a_b">
+            32
+          </view>
+        </view>
+      </view>
+      <view class="list_right">
+        <image src="../../images/index/ss.jpg">
+        </image>
+      </view>
+    </view>
+  </navigator>
+</view>

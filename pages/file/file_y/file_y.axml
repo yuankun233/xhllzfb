@@ -1,0 +1,25 @@
+<view class="file_y subwe_Z1b3fyv">
+  <view class="file_y_1" a:for="{{list}}">
+    <view class="name">
+      {{item.name}}
+      <view class="sex" a:if="{{item.sex==1}}" ref="__subweSaveRef__">
+        男
+      </view>
+      <view class="sex" a:else ref="__subweSaveRef__">
+        女
+      </view>
+    </view>
+    <view class="num">
+      手机号：{{item.phone}}
+    </view>
+    <view data-id="{{item.id}}" data-index="{{index}}" class="bianji" onTap="goFile_bj">
+      编辑
+    </view>
+    <view data-id="{{item.id}}" data-index="{{index}}" class="bianji1" onTap="goFile_sc">
+      删除
+    </view>
+  </view>
+  <view class="aa" onTap="goFile">
+    新增健康档案
+  </view>
+</view>

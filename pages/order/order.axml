@@ -1,0 +1,51 @@
+<scroll-view scroll-x class="bg-white nav subwe_Z1acJ4d">
+  <view class="flex text-center">
+    <view class="cu-item flex-sub {{index==TabCur?'AA':''}}" data-id="{{index}}" a:for="{{tab}}" a:key="" onTap="tabSelect">
+      {{item}}
+      <view class="{{index==TabCur?'BB':''}}">
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<view class="order subwe_Z1acJ4d">
+  <view class="order_list" id="{{item.id}}" a:for="{{list}}" onTap="navto">
+    <image class="order_list_1" mode="aspectFit" src="{{item.pic_url==null?'../../images/index/zanwu.png':item.pic_url}}">
+    </image>
+    <view class="order_list_2">
+      {{item.body}}
+    </view>
+    <view class="order_list_3">
+      {{item.status_text}}
+    </view>
+    <view class="order_list_4">
+      <view style="font-size: 24rpx;font-family: PingFang SC;font-weight: 400;color: #666666;display:inline-block;">
+        实付款：
+      </view>￥{{item.total_fee}}
+    </view>
+    <image src="https://www.xiaohulaile.com/wxcx/order1 (2).png" class="order_list_i">
+    </image>
+    <view class="order_list_6">
+    </view>
+    <view class="order_list_7">
+      护理项目：
+    </view>
+    <view class="order_list_8">
+      {{item.body}}
+    </view>
+  </view>
+  <view class="order_over" a:if="{{list==''}}">
+    <image src="https://www.xiaohulaile.com/wxcx/bg321.png">
+    </image>
+    <text>
+      这里暂时没有服务订单~
+    </text>
+  </view>
+  <view a:else>
+    <view class="loadmore" style="text-align:center;width:750rpx;height:100rpx;line-height:100rpx" a:if="{{zanwu==1}}">
+      正在加载...
+    </view>
+    <view class="loadmore" style="text-align:center;width:750rpx;height:100rpx;line-height:100rpx" a:if="{{zanwu==2}}">
+      没有更多了
+    </view>
+  </view>
+</view>

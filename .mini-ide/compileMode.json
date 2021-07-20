@@ -1,0 +1,24 @@
+{
+  "modes": [
+    {
+      "title": "11",
+      "page": "pages/index/index"
+    },
+    {
+      "title": "2",
+      "page": "pages/my/my"
+    },
+    {
+      "title": "login",
+      "page": "pages/loginzfb/loginzfb"
+    },
+    {
+      "title": "123",
+      "page": "pages/my/my"
+    },
+    {
+      "title": "6666",
+      "page": "pages/my/my"
+    }
+  ]
+}

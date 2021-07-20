@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "address-picker":"../../common/cop/AddressPicker/AddressPicker"
+  },
+  "defaultTitle": "健康档案"
+}

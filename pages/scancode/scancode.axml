@@ -1,0 +1,6 @@
+<button style="margin-top:50px;" class="subwe_jj9G6" onTap="getQRCode">
+  扫一扫
+</button>
+<view class="subwe_jj9G6">
+  {{ qRCodeMsg }}
+</view>
