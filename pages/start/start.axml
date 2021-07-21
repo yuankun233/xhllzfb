@@ -1,13 +1,6 @@
 <view class="merdetails subwe_Z6h8mg">
   <image class="backgroundimg" src="../../images/index/background.png">
   </image>
-  <view class="top">
-    <image src="../../images/index/back.png" onTap="back">
-    </image>
-    <view class="a_b top_1">
-      护理员简介
-    </view>
-  </view>
   <view class="list">
     <image class="list_pic" src="http://www.xiaohulaile.com/xh/p/doc/doc1.png">
     </image>

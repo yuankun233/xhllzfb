@@ -19,6 +19,14 @@
     {
       "title": "6666",
       "page": "pages/my/my"
+    },
+    {
+      "title": "健康模块",
+      "page": "pages/message/message"
+    },
+    {
+      "title": "护士详情",
+      "page": "pages/start/start"
     }
   ]
 }

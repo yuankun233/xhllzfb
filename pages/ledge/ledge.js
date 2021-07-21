@@ -1,21 +1,45 @@
-import WXPage from "../../subwe/page";
-// pages/message_details/message_details.js
+// pages/specialty/specialty.js
+import wx from "../../subwe/bridge"
+import WXPage from "../../subwe/page"
 WXPage({
   /**
    * 页面的初始数据
    */
   data: {
-    id: ''
+    showIndex: 0,
+    list: "",
+    lists: ""
   },
-
+  panel: function (e) {
+    console.log(e.currentTarget.dataset.index)
+    if (e.currentTarget.dataset.index != this.data.showIndex) {
+      this.setData({
+        showIndex: e.currentTarget.dataset.index
+      })
+    } else {
+      this.setData({
+        showIndex: 0
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      id: options.id
-    });
-    // console.log(this.__data__.id);
+    let that = this
+    wx.request({
+      url: "https://www.xiaohulaile.com/xh/p/wxcx/Ledge/Ledge_list",
+      header: {
+        "content-type": "application/json" // 默认值
+      },
+      data: {},
+      success(res) {
+        console.log(res)
+        that.setData({
+          list: res.data.data
+        })
+      }
+    })
   },
 
   /**
@@ -52,4 +76,4 @@ WXPage({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {}
-});
+})
