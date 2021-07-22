@@ -78,7 +78,7 @@ navigator {
 
 .subwe_l25hk.merdetails .list .list_top_left, .subwe_l25hk .merdetails .list .list_top_left {
   overflow: hidden;
-  margin-left: 181rpx;
+  margin-left: 170rpx;
 }
 
 .subwe_l25hk.merdetails .list .list_top_left .list_name, .subwe_l25hk .merdetails .list .list_top_left .list_name {
