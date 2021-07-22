@@ -106,12 +106,21 @@
     </view>
   </view>
   <view class="my_bottom">
-    <view class="my_bottom_1" onTap="goSpecialty">
-      <image src="https://www.xiaohulaile.com/wxcx/gou23.png">
-      </image>
-      <view>
-        客服中心
-      </view>
+    <!-- <view class="my_bottom_1">
+      <image src="https://www.xiaohulaile.com/wxcx/gou2 (4).png"></image>
+      <view> 投诉与建议</view>
+    </view> -->
+    <view onTap="goSpecialtys" class="my_bottom_1">
+      <image src="https://www.xiaohulaile.com/wxcx/gou2 (5).png"></image>
+      <view style="font-family:PingFangSC-Regular;"> 小护知识</view>
+    </view>
+    <view
+      onTap="goSpecialty"
+      class="my_bottom_1"
+      style="border-top:1rpx solid #ccc"
+    >
+      <image src="https://www.xiaohulaile.com/wxcx/gou2 (3).png"></image>
+      <view style="font-family:PingFangSC-Regular;"> 常见问答</view>
     </view>
   </view>
 </view>

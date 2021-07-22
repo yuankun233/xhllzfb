@@ -21,7 +21,8 @@
     "pages/order/order_details/order_details",
     "pages/aboutus/aboutus",
     "pages/scancode/scancode",
-    "pages/start/start"
+    "pages/start/start",
+    "pages/ledge/ledge"
   ],
   "permission": {
     "scope.userLocation": {
