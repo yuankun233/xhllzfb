@@ -2,7 +2,7 @@
   font-size: 40rpx;
   color: #4178F0;
   font-weight: 800;
-  margin-top: 100rpx;
+  /* margin-top: 100rpx; */
   margin-left: 14rpx;
 }
 
@@ -79,7 +79,7 @@
 .subwe_1iXb3f.index .index_bottom, .subwe_1iXb3f .index .index_bottom {
   margin-top: 87rpx;
   width: 100%;
-  height: 826rpx;
+  height: 1570rpx;
   background-color: #e9eefa;
   position: relative;
   border: 1px solid #e9eefa;
@@ -266,7 +266,7 @@
   border-left: 5rpx solid #265dd5;
   position: absolute;
   left: 14rpx;
-  top: 521rpx;
+  top: 1250rpx;
   color: #333333;
   font-weight: 900;
   padding-left: 10rpx;
@@ -285,7 +285,7 @@
 .subwe_1iXb3f.index .index_bottom .bottom_mx, .subwe_1iXb3f .index .index_bottom .bottom_mx {
   width: 750rpx;
   height: 242rpx;
-  margin-top: 569rpx;
+  margin-top: 1300rpx;
   padding-left: 14rpx;
   justify-content: left;
   overflow-x: auto;
@@ -306,4 +306,115 @@
 .subwe_1iXb3f .AA {
   color: #e6e6e6;
   font-size: 24rpx;
+}
+
+.index .index_bottom .bottom_Jujia_2 {
+  width: 715rpx;
+  height: 35rpx;
+  border-left: 5rpx solid #265dd5;
+  position: absolute;
+  left: 14rpx;
+  top: 521rpx;
+  color: #333333;
+  font-weight: 900;
+  padding-left: 10rpx;
+  font-size: 34rpx;
+  line-height: 36rpx;
+}
+.index .index_bottom .bottom_mx2 {
+  position: absolute;
+  top: 490rpx;
+  width: 750rpx;
+  margin-top: 80rpx;
+  padding-left: 14rpx;
+  justify-content: left;
+  overflow-x: auto;
+  /*x轴超出后可滚动*/
+  white-space: nowrap;
+  /*实现子元素不换行*/
+  overflow-y: hidden;
+}
+.index .index_bottom .bottom_mx2 .bottom_mx_1 {
+  display: inline-block;
+  width: 216rpx;
+  height: 300rpx;
+  margin-right: 40rpx;
+}
+.index .index_bottom .bottom_mx2 .bottom_mx_1 .bottom_mx_img {
+  width: 216rpx;
+  height: 216rpx;
+  border-radius: 15rpx;
+}
+.index .index_bottom .bottom_mx2 .bottom_mx_1 .bottom_mx_title {
+  width: 216rpx;
+  height: 35rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.index .index_bottom .bottom_mx2 .bottom_mx_1 .bottom_mx_price {
+  width: 216rpx;
+  height: 35rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  margin-top: 7rpx;
+  color: #FF6C00;
+}
+
+.index .index_bottom .bottom_Jujia_3 {
+  width: 715rpx;
+  height: 35rpx;
+  border-left: 5rpx solid #265dd5;
+  position: absolute;
+  left: 14rpx;
+  top: 881rpx;
+  color: #333333;
+  font-weight: 900;
+  padding-left: 10rpx;
+  font-size: 34rpx;
+  line-height: 36rpx;
+}
+.index .index_bottom .bottom_mx3 {
+  position: absolute;
+  top: 840rpx;
+  width: 750rpx;
+  margin-top: 80rpx;
+  padding-left: 14rpx;
+  justify-content: left;
+  overflow-x: auto;
+  /*x轴超出后可滚动*/
+  white-space: nowrap;
+  /*实现子元素不换行*/
+  overflow-y: hidden;
+}
+.index .index_bottom .bottom_mx3 .bottom_mx_2 {
+  display: inline-block;
+  width: 216rpx;
+  height: 300rpx;
+  margin-right: 40rpx;
+  margin-top: 10rpx;
+}
+.index .index_bottom .bottom_mx3 .bottom_mx_2 .bottom_mx_img1 {
+  width: 216rpx;
+  height: 216rpx;
+  border-radius: 10rpx;
+}
+.index .index_bottom .bottom_mx3 .bottom_mx_2 .bottom_mx_title1 {
+  width: 216rpx;
+  height: 35rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.index .index_bottom .bottom_mx3 .bottom_mx_2 .bottom_mx_price1 {
+  width: 216rpx;
+  height: 35rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  margin-top: 7rpx;
+  color: #FF6C00;
 }

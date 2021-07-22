@@ -1,3 +1,14 @@
+page,
+view,
+text,
+swiper,
+swiper-item,
+image,
+navigator {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .subwe_l25hk.merdetails, .subwe_l25hk .merdetails {
   overflow: hidden;
 }
@@ -39,7 +50,7 @@
   height: hidden;
   background-color: #fff;
   margin: 0 auto;
-  margin-top: 101rpx;
+  margin-top: 260rpx;
   border-radius: 15rpx;
   box-shadow: 2px 2px 10px #888888;
   overflow: hidden;
@@ -67,7 +78,7 @@
 
 .subwe_l25hk.merdetails .list .list_top_left, .subwe_l25hk .merdetails .list .list_top_left {
   overflow: hidden;
-  margin-left: 181rpx;
+  margin-left: 170rpx;
 }
 
 .subwe_l25hk.merdetails .list .list_top_left .list_name, .subwe_l25hk .merdetails .list .list_top_left .list_name {
@@ -119,7 +130,7 @@
 
 .subwe_l25hk.merdetails .list .list_address .address_right, .subwe_l25hk .merdetails .list .list_address .address_right {
   float: left;
-  margin-left: 170rpx;
+  margin-left: 160rpx;
   line-height: 38rpx;
 }
 

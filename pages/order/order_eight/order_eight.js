@@ -40,7 +40,14 @@ WXPage({
     time_slot: '',
     text: '',
     isPay: false,
-    mingxi: 1
+    mingxi: 1,
+    check:true
+  },
+  //滑动到底同意勾选
+  yuyuebottom(e){
+    this.setData({
+      check:false
+    })
   },
   //获取时间
   datePicker() {

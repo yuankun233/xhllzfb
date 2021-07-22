@@ -71,7 +71,7 @@
       创建时间
       <view class="time_right" ref="__subweSaveRef__">
         <text>
-          2021-03-17 10:07:20
+          {{list.create_time}}
         </text>
       </view>
     </view>
@@ -129,6 +129,7 @@
           <view>
             勾选即表示同意“退款须知”内容
           </view>
+          
         </view>
       </view>
       <view class="modal_3">
