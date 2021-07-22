@@ -1,6 +1,9 @@
-<!-- <view class="merdetails subwe_Z21LdFR">
+<view class="merdetails subwe_Z21LdFR">
   <image class="backgroundimg" src="../../images/index/background.png">
   </image>
+  <view class="top">
+
+  </view>
   <view class="list">
     <image class="list_pic" src="{{list.pic_url}}">
     </image>
@@ -89,4 +92,4 @@
       </view>
     </view>
   </view>
-</view> -->
+</view>
