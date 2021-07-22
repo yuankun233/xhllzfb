@@ -11,7 +11,8 @@ WXPage({
     autoplay: true,
     interval: 5000,
     duration: 500,
-    address: '加载中..'
+    address: '加载中..',
+    list:''
   },
 
   gostart(e) {
@@ -128,7 +129,12 @@ WXPage({
       }
     });
   },
-
+ goOrder(e) {
+        console.log(e.currentTarget.dataset.id);
+        wx.navigateTo({
+          url: `/pages/order/order_eight/order_eight?index=${e.currentTarget.dataset.id}`,
+        });
+      },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -168,6 +174,38 @@ WXPage({
       fail: function (res) {},
       complete: function (res) {}
     });
+          var _this = this;
+          wx.request({
+            url: 'https://www.xiaohulaile.com/xh/p/gw/project/get_list',
+            header: {
+              'content-type': 'application/json', // 默认值
+            },
+            data: {
+              cate: 1
+            },
+            success(res) {
+              _this.setData({
+                list: res.data.data.data,
+              });
+                console.log(_this.data.list);
+                
+            },
+          });
+          wx.request({
+              url: 'https://www.xiaohulaile.com/xh/p/gw/project/get_list',
+              header: {
+                'content-type': 'application/json', // 默认值
+              },
+              data: {
+                cate: 3
+              },
+              success(res) {
+                _this.setData({
+                  lists: res.data.data.data,
+                });
+                wx.hideLoading()
+              },
+            });
   },
 
   /**
