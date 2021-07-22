@@ -130,7 +130,7 @@ navigator {
 
 .subwe_l25hk.merdetails .list .list_address .address_right, .subwe_l25hk .merdetails .list .list_address .address_right {
   float: left;
-  margin-left: 170rpx;
+  margin-left: 160rpx;
   line-height: 38rpx;
 }
 
