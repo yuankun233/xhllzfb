@@ -124,15 +124,15 @@
       明星服务团队
     </view>
     <view class="bottom_mx">
-      <image src="https://www.xiaohulaile.com/wxcx/startdoc/ding.png" class="bottom_mx_1" data-num="192" data-name="丁护士" onTap="gostart">
+      <image src="https://www.xiaohulaile.com/wxcx/startdoc/ding.png" class="bottom_mx_1" data-num="192" data-name="马护士" onTap="gostart">
       </image>
-      <image src="https://www.xiaohulaile.com/wxcx/startdoc/feng.png" class="bottom_mx_1" data-num="128" data-name="冯护士" onTap="gostart">
+      <image src="https://www.xiaohulaile.com/wxcx/startdoc/feng.png" class="bottom_mx_1" data-num="128" data-name="富护士" onTap="gostart">
       </image>
       <image src="https://www.xiaohulaile.com/wxcx/startdoc/jiang.png" class="bottom_mx_1" data-num="398" data-name="蒋护士" onTap="gostart">
       </image>
       <image src="https://www.xiaohulaile.com/wxcx/startdoc/li.png" class="bottom_mx_1" data-num="236" data-name="李护士" onTap="gostart">
       </image>
-      <image src="https://www.xiaohulaile.com/wxcx/startdoc/sun.png" class="bottom_mx_1" data-num="136" data-name="孙护士" onTap="gostart">
+      <image src="https://www.xiaohulaile.com/wxcx/startdoc/sun.png" class="bottom_mx_1" data-num="136" data-name="武护士" onTap="gostart">
       </image>
     </view>
   </view>

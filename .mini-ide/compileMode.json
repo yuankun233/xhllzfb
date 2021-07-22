@@ -26,7 +26,12 @@
     },
     {
       "title": "护士详情",
-      "page": "pages/start/start"
+      "page": "pages/start/start",
+      "pageQuery": "name=富护士"
+    },
+    {
+      "title": "我的模块",
+      "page": "pages/my/my"
     }
   ]
 }
