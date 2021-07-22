@@ -186,7 +186,7 @@ WXPage({
     // return
 
   },
-  onAuthError(失败) {
+  onAuthError(res) {
     console.log(res, "失败")
   },
   onReady: function () {

@@ -1,13 +1,13 @@
 <view class="merdetails subwe_l25hk">
   <image class="backgroundimg" src="../../images/index/background.png">
   </image>
-  <view class="top">
+  <!-- <view class="top">
     <image src="../../images/index/back.png" onTap="back">
     </image>
     <span>
       公司简介
     </span>
-  </view>
+  </view> -->
   <view class="list">
     <image class="list_pic" src="http://www.xiaohulaile.com/wxcx/banner/aboutlogo.png">
     </image>

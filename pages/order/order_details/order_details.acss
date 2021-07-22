@@ -294,7 +294,7 @@
   margin-top: 10rpx;
   padding-right: 10rpx;
 }
-
+/* 
 .subwe_cNkrX .modal .modal_2 .modal_23 checkbox {
   width: 37.7rpx;
   height: 37.7rpx;
@@ -304,7 +304,7 @@
   position: absolute;
   bottom: 29rpx;
   left: 16rpx;
-}
+} */
 
 .subwe_cNkrX .modal .modal_2 .modal_23 view {
   width: 414rpx;

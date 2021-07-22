@@ -1,4 +1,5 @@
 {
   "usingComponents": {},
-  "navigationStyle": "custom"
+  "navigationStyle": "custom",
+  "defaultTitle": "公司简介"
 }

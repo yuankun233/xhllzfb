@@ -2,8 +2,7 @@
   <view class="order_eight_top">
     <view class="order_eight_t_bottom">
       <view class="order_eight_t_left">
-        <!-- <image class="order_eight_t_left_p" src="https://xiaohulaile.com/xh/p/back.png" onTap="back">
-        </image> -->
+        <!--<image class="order_eight_t_left_p" src="https://xiaohulaile.com/xh/p/back.png" onTap="back"></image> -->
       </view>
       <view class="order_eight_t_mid">
         <view class="order_eight_t_mid_left {{top == 1 ?'click':''}}" onTap="xiangshang">
@@ -32,7 +31,7 @@
       <view style="color:#EF1515;font-size:34rpx;float:left;">
         ￥{{eightList.price}}
       </view>
-      <view style="float:left;line-height:52rpx;color:#EF1515;">
+      <view style="float:left;line-height:45rpx;color:#EF1515;">
         .00
       </view>
       <view style="float:left;font-size:34rpx;margin-left:10rpx">
@@ -169,7 +168,7 @@
         <view class="modal_21">
           小护来了居家服务须知
         </view>
-        <scroll-view scroll-y="true" style="height: 580rpx;margin-top:20rpx">
+        <scroll-view scroll-y="true" style="height: 580rpx;margin-top:20rpx" onScrollToLower="yuyuebottom">
           <view class="modal_22">
             尊敬的先生/女士：
             为了更好的给您和您的家人提供优质的居家专业服务，请务必仔细阅读本须知：
@@ -191,13 +190,19 @@
             请仔细阅读确认后下单。谢谢配合！
           </view>
         </scroll-view>
+
         <view class="modal_23">
-          <checkbox-group onChange="checkboxChange">
-            <checkbox color="#ff9c00" value="1">
+          <!-- <checkbox-group onChange="checkboxChange">
+            <checkbox color="#39B54A" value="1" >
             </checkbox>
-          </checkbox-group>
+          </checkbox-group> -->
+          <checkbox-group onChange="checkboxChange">
+                <label class="flex justify-between align-center flex-sub">
+                      <checkbox value="1" disabled="{{check}}" color="#39B54A">
+                </label>
+            </checkbox-group>
           <view>
-            勾选即表示同意“预约须知”内容
+            下滑至底并勾选、即同意“预约须知”
           </view>
         </view>
       </view>
@@ -242,7 +247,7 @@
     <view style="color:#EF1515;font-size:34rpx;float:left;margin-top:12rpx">
       ￥{{total_fee}}
     </view>
-    <view style="float:left;line-height:54rpx;color:#EF1515;margin-top:11rpx">
+    <view style="float:left;line-height:45rpx;color:#EF1515;margin-top:11rpx">
       .00
     </view>
     <view style="overflow:hidden;font-family:PingFangSC-Regular;color:#999999;font-size:24rpx;float:left;margin-top:19rpx;margin-left:150rpx" onTap="mingxis">

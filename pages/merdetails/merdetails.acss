@@ -1,4 +1,4 @@
-.subwe_Z21LdFR.merdetails, .subwe_Z21LdFR .merdetails {
+/* .subwe_Z21LdFR.merdetails, .subwe_Z21LdFR .merdetails {
   overflow: hidden;
 }
 
@@ -162,4 +162,4 @@
   float: left;
   margin-left: 41rpx;
   margin-right: 41rpx;
-}
+} */
