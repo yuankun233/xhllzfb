@@ -15,14 +15,14 @@
     </view>
     <radio-group onChange="radioChange">
       <label class="sex">
-        <radio color="#fff" value="1" checked="{{sex==1?true:false}}">
+        <radio value="1" checked="{{sex==1?true:false}}">
         </radio>
         <text>
           男
         </text>
       </label>
       <label class="sex">
-        <radio color="#fff" value="2" checked="{{sex==2?true:false}}">
+        <radio  value="2" checked="{{sex==2?true:false}}">
         </radio>
         <text>
           女

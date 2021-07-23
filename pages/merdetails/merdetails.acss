@@ -1,4 +1,15 @@
-/* .subwe_Z21LdFR.merdetails, .subwe_Z21LdFR .merdetails {
+/* page,
+view,
+text,
+swiper,
+swiper-item,
+image,
+navigator {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+.subwe_Z21LdFR.merdetails, .subwe_Z21LdFR .merdetails {
   overflow: hidden;
 }
 
@@ -162,4 +173,4 @@
   float: left;
   margin-left: 41rpx;
   margin-right: 41rpx;
-} */
+}

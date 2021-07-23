@@ -551,8 +551,8 @@ WXPage({
                       url: '/pages/order/order?index=0'
                     });
                   } else {
-                    wx.switchTab({
-                      url: '/pages/index/index'
+                    wx.redirectTo({
+                      url: '/pages/order/order?index=0'
                     });
                   }
                   console.log(res.data.data, "3")

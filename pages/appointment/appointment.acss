@@ -74,7 +74,7 @@
 }
 
 .subwe_Z6mNx1.appointment .appointment_1 .appointment_15, .subwe_Z6mNx1 .appointment .appointment_1 .appointment_15 {
-  width: 100rpx;
+  width: 150rpx;
   height: 22rpx;
   line-height: 22rpx;
   font-size: 22rpx;
