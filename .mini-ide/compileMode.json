@@ -20,6 +20,10 @@
     {
       "title": "机构列表",
       "page": "pages/merchant/merchant"
+    },
+    {
+      "title": "新增健康档案",
+      "page": "pages/file/file"
     }
   ]
 }

@@ -127,7 +127,7 @@
      <view class="bottom_mx_1" a:for="{{list}}" a:key="{{index}}" onTap="goOrder" data-id="{{item.id}}">
        <image class="bottom_mx_img" src="{{item.zy_pic}}"></image>
        <view class="bottom_mx_title">{{item.title}}</view>
-       <view class="bottom_mx_price"><view style="float:left;">￥{{item.price}}</view><view style="font-size:22rpx;float:left;line-height:45rpx">.00</view></view>
+       <view class="bottom_mx_price"><view style="float:left;">￥{{item.price}}</view><view style="font-size:22rpx;float:left;line-height:38rpx">.00</view></view>
      </view> 
     </view>
     <view class="bottom_Jujia_3">
@@ -137,7 +137,7 @@
      <view class="bottom_mx_2" a:for="{{lists}}" a:key="{{index}}" onTap="goOrder" data-id="{{item.id}}">
        <image class="bottom_mx_img1" src="{{item.zy_pic}}"></image>
        <view class="bottom_mx_title1">{{item.title}}</view>
-       <view class="bottom_mx_price1"><view style="float:left;">￥{{item.price}}</view><view style="font-size:22rpx;float:left;line-height:45rpx">.00</view></view>
+       <view class="bottom_mx_price1"><view style="float:left;">￥{{item.price}}</view><view style="font-size:22rpx;float:left;line-height:38rpx">.00</view></view>
      </view> 
     </view>
     <view class="bottom_Jujia_1">
