@@ -17,10 +17,10 @@ WXPage({
 
       //返回可以用于wx.openLocation的经纬度
       success(res) {
-        const latitude = 31.1437;
-        const longitude = 121.3469;
-        const name = '上海小护来了信息科技有限公司';
-        const address = '上海市闵行区联明路389号 麦可将文创园F楼';
+        const latitude = 31.01753
+        const longitude = 121.444815
+        const name = '上海小护来了信息科技有限公司'
+        const address = '上海市闵行区紫月路1000号 东软软件园'
         wx.openLocation({
           latitude,
           longitude,

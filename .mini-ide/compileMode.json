@@ -1,24 +1,8 @@
 {
   "modes": [
     {
-      "title": "11",
-      "page": "pages/index/index"
-    },
-    {
-      "title": "2",
-      "page": "pages/my/my"
-    },
-    {
       "title": "login",
       "page": "pages/loginzfb/loginzfb"
-    },
-    {
-      "title": "123",
-      "page": "pages/my/my"
-    },
-    {
-      "title": "6666",
-      "page": "pages/my/my"
     },
     {
       "title": "健康模块",
@@ -32,6 +16,14 @@
     {
       "title": "我的模块",
       "page": "pages/my/my"
+    },
+    {
+      "title": "机构列表",
+      "page": "pages/merchant/merchant"
+    },
+    {
+      "title": "新增健康档案",
+      "page": "pages/file/file"
     }
   ]
 }
