@@ -115,86 +115,86 @@ WXPage({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-    // wx.showLoading({
-    //   title: '加载中...'
-    // });
+  // onShow: function () {
+  //   // wx.showLoading({
+  //   //   title: '加载中...'
+  //   // });
 
-    var _this = this; // wx.getStorage({})
-    // console.log(11);
+  //   var _this = this; // wx.getStorage({})
+  //   // console.log(11);
 
 
-    wx.getStorage({
-      key: 'user',
+  //   wx.getStorage({
+  //     key: 'user',
 
-      success(res) {
-        console.log(res, 'meiyou的');
-        console.log(res.data, 'ahahahha1');
+  //     success(res) {
+  //       console.log(res, 'meiyou的');
+  //       console.log(res.data, 'ahahahha1');
 
-        _this.setData({
-          user: res.data
-        });
+  //       _this.setData({
+  //         user: res.data
+  //       });
 
-        wx.getLocation({
-          success(res1) {
-            console.log(res1.latitude, '1111');
-            console.log(res.data, '看看');
-            console.log(res1.longitude, '1111');
-            wx.request({
-              url: 'https://www.xiaohulaile.com/xh/p/wxcx/nursing/index',
-              header: {
-                'content-type': 'application/json' // 默认值
+  //       wx.getLocation({
+  //         success(res1) {
+  //           console.log(res1.latitude, '1111');
+  //           console.log(res.data, '看看');
+  //           console.log(res1.longitude, '1111');
+  //           wx.request({
+  //             url: 'https://www.xiaohulaile.com/xh/p/wxcx/nursing/index',
+  //             header: {
+  //               'content-type': 'application/json' // 默认值
 
-              },
-              data: {
-                user_token: res.data.user_token,
-                my_id: res.data.my_id,
-                longitude: res1.longitude,
-                latitude: res1.latitude
-              },
+  //             },
+  //             data: {
+  //               user_token: res.data.user_token,
+  //               my_id: res.data.my_id,
+  //               longitude: res1.longitude,
+  //               latitude: res1.latitude
+  //             },
 
-              success(res) {
-                // return
-                if (res.data.message == "请重新登录") {
-                  console.log(res, 111111);
-                  wx.showToast({
-                    title: '请先登录',
-                    icon: 'none',
-                    duration: 1000
-                  });
-                    console.log('doSomething');
-                    wx.reLaunch({
-                      url: '/pages/loginzfb/loginzfb'
-                    });
-                }
+  //             success(res) {
+  //               // return
+  //               if (res.data.message == "请重新登录") {
+  //                 console.log(res, 111111);
+  //                 wx.showToast({
+  //                   title: '请先登录',
+  //                   icon: 'none',
+  //                   duration: 1000
+  //                 });
+  //                   console.log('doSomething');
+  //                   wx.reLaunch({
+  //                     url: '/pages/loginzfb/loginzfb'
+  //                   });
+  //               }
 
-                _this.setData({
-                  list: res.data.data
-                });
+  //               _this.setData({
+  //                 list: res.data.data
+  //               });
 
-                // wx.hideLoading();
-              }
+  //               // wx.hideLoading();
+  //             }
 
-            });
-          }
+  //           });
+  //         }
 
-        });
-      },
-      fail(res) {
-        console.log(res)
-        wx.showToast({
-          title: '请先登录',
-          icon: 'none',
-          duration: 1000
-        });
-          console.log('doSomething');
-          wx.reLaunch({
-            url: '/pages/loginzfb/loginzfb'
-          });
-      }
+  //       });
+  //     },
+  //     fail(res) {
+  //       console.log(res)
+  //       wx.showToast({
+  //         title: '请先登录',
+  //         icon: 'none',
+  //         duration: 1000
+  //       });
+  //         console.log('doSomething');
+  //         wx.reLaunch({
+  //           url: '/pages/loginzfb/loginzfb'
+  //         });
+  //     }
 
-    });
-  },
+  //   });
+  // },
 
   /**
    * 生命周期函数--监听页面隐藏

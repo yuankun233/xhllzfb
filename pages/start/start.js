@@ -1,31 +1,36 @@
-import wx from '../../subwe/bridge';
-import WXPage from "../../subwe/page";
+import wx from "../../subwe/bridge"
+import WXPage from "../../subwe/page"
 // pages/start/start.js
 WXPage({
   /**
    * 页面的初始数据
    */
   data: {
-    name: '',
-    num: ''
+    name: "",
+    num: ""
   },
   back: function () {
-    wx.navigateBack({});
+    wx.navigateBack({})
   },
 
   go_eight(e) {
-    console.log(e.currentTarget.dataset.id);
+    console.log(e.currentTarget.dataset.id)
 
-    if (e.currentTarget.dataset.id == '1' || e.currentTarget.dataset.id == '3' || e.currentTarget.dataset.id == '5' || e.currentTarget.dataset.id == '6') {
+    if (
+      e.currentTarget.dataset.id == "1" ||
+      e.currentTarget.dataset.id == "3" ||
+      e.currentTarget.dataset.id == "5" ||
+      e.currentTarget.dataset.id == "6"
+    ) {
       wx.navigateTo({
         url: `/pages/order/order_eight/order_eight?index=${e.currentTarget.dataset.id}`
-      });
+      })
     } else {
       wx.showToast({
-        title: '敬请期待....',
-        icon: 'none',
+        title: "敬请期待....",
+        icon: "none",
         duration: 2000
-      });
+      })
     }
   },
 
@@ -34,14 +39,15 @@ WXPage({
    */
   onLoad: function (options) {
     wx.showLoading({
-      title: '加载中...'
-    });
-    console.log(options);
+      title: "加载中..."
+    })
+    console.log(options.nurse)
+
+    const nurse = JSON.parse(options.nurse)
     this.setData({
-      name: options.name,
-      num: options.id
-    });
-    wx.hideLoading();
+      nurse: nurse
+    })
+    wx.hideLoading()
   },
 
   /**
@@ -78,4 +84,4 @@ WXPage({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {}
-});
+})

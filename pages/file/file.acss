@@ -24,7 +24,7 @@
 }
 
 .subwe_1XDOkW.file .file_I .file_I_1, .subwe_1XDOkW .file .file_I .file_I_1 {
-  margin-left: 194rpx;
+  margin-left: 150rpx;
   margin-top: 34rpx;
 }
 
@@ -66,12 +66,11 @@
 }
 
 .subwe_1XDOkW.file .file_I .file_I_number, .subwe_1XDOkW .file .file_I .file_I_number {
-  margin-left: 83rpx;
   margin-top: 34rpx;
 }
 
 .subwe_1XDOkW.file .file_I .file_I_dz, .subwe_1XDOkW .file .file_I .file_I_dz {
-  margin-right: 234rpx;
+  margin-right: 150rpx;
 }
 
 .subwe_1XDOkW.file .file_I .file_I_dz input, .subwe_1XDOkW .file .file_I .file_I_dz input {
@@ -197,4 +196,11 @@ page {
   color: #d2d2d2 !important;
   font-size: 34rpx;
   margin-top: 28rpx
+}
+.address-picker{
+  top: -5.5rem !important;
+  z-index: 999;
+}
+.a-radio{
+  border: unset !important;
 }

@@ -99,7 +99,7 @@ WXPage({
   total() {
     let that = this
     that.setData({
-      total_fee: that.data.p_price + that.data.price
+      total_fee: that.data.price
     })
   },
 
@@ -676,7 +676,7 @@ WXPage({
           },
 
           success(res) {
-            console.log(res)
+            console.log(res.data.data)
 
             if (res.data.message == "请重新登录") {
               wx.hideLoading()
@@ -702,7 +702,7 @@ WXPage({
             })
 
             _this.setData({
-              total_fee: _this.data.p_price + _this.data.price
+              total_fee:  _this.data.price
             })
           }
         })
@@ -757,100 +757,100 @@ WXPage({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-    var _this = this
+  // onShow: function () {
+  //   var _this = this
 
-    wx.getStorage({
-      key: "user",
+  //   wx.getStorage({
+  //     key: "user",
 
-      success(res) {
-        console.log(res.data)
+  //     success(res) {
+  //       console.log(res.data)
 
-        _this.setData({
-          user: res.data
-        })
+  //       _this.setData({
+  //         user: res.data
+  //       })
 
-        wx.request({
-          url: "https://www.xiaohulaile.com/xh/p/wxcx/project/index",
-          header: {
-            "content-type": "application/json" // 默认值
-          },
-          method: "post",
-          data: {
-            id: _this.data.index,
-            user_token: res.data.user_token
-          },
+  //       wx.request({
+  //         url: "https://www.xiaohulaile.com/xh/p/wxcx/project/index",
+  //         header: {
+  //           "content-type": "application/json" // 默认值
+  //         },
+  //         method: "post",
+  //         data: {
+  //           id: _this.data.index,
+  //           user_token: res.data.user_token
+  //         },
 
-          success(res) {
-            if (res.data.message == "请重新登录") {
-              wx.hideLoading()
-              console.log(res, 111111)
-              wx.showToast({
-                title: "请先登录",
-                icon: "none",
-                duration: 1000
-              })
-              setTimeout(function () {
-                console.log("doSomething")
-                wx.reLaunch({
-                  url: "/pages/loginzfb/loginzfb"
-                })
-              }, 2000)
-            }
+  //         success(res) {
+  //           if (res.data.message == "请重新登录") {
+  //             wx.hideLoading()
+  //             console.log(res, 111111)
+  //             wx.showToast({
+  //               title: "请先登录",
+  //               icon: "none",
+  //               duration: 1000
+  //             })
+  //             setTimeout(function () {
+  //               console.log("doSomething")
+  //               wx.reLaunch({
+  //                 url: "/pages/loginzfb/loginzfb"
+  //               })
+  //             }, 2000)
+  //           }
 
-            _this.setData({
-              eightList: res.data.data,
-              price: res.data.data.price,
-              p_price: res.data.data.p_price
-            })
+  //           _this.setData({
+  //             eightList: res.data.data,
+  //             price: res.data.data.price,
+  //             p_price: res.data.data.p_price
+  //           })
 
-            _this.setData({
-              total_fee: _this.data.p_price + _this.data.price
-            })
-          }
-        })
-      },
-      fail(res) {
-        console.log(res)
-        wx.showToast({
-          title: "请先登录",
-          icon: "none",
-          duration: 1000
-        })
-        setTimeout(function () {
-          console.log("doSomething")
-          wx.reLaunch({
-            url: "/pages/loginzfb/loginzfb"
-          })
-        }, 1000)
-      }
-    })
-    var datetime = new Date()
-    var year = datetime.getFullYear() //获取完整的年份(4位,1970)
+  //           _this.setData({
+  //             total_fee: _this.data.p_price + _this.data.price
+  //           })
+  //         }
+  //       })
+  //     },
+  //     fail(res) {
+  //       console.log(res)
+  //       wx.showToast({
+  //         title: "请先登录",
+  //         icon: "none",
+  //         duration: 1000
+  //       })
+  //       setTimeout(function () {
+  //         console.log("doSomething")
+  //         wx.reLaunch({
+  //           url: "/pages/loginzfb/loginzfb"
+  //         })
+  //       }, 1000)
+  //     }
+  //   })
+  //   var datetime = new Date()
+  //   var year = datetime.getFullYear() //获取完整的年份(4位,1970)
 
-    var month = datetime.getMonth() + 1 //获取月份(0-11,0代表1月,用的时候记得加上1)
+  //   var month = datetime.getMonth() + 1 //获取月份(0-11,0代表1月,用的时候记得加上1)
 
-    if (month <= 9) {
-      month = "0" + month
-    }
+  //   if (month <= 9) {
+  //     month = "0" + month
+  //   }
 
-    var date = datetime.getDate() //获取日(1-31)
+  //   var date = datetime.getDate() //获取日(1-31)
 
-    if (date <= 9) {
-      date = "0" + date
-    }
+  //   if (date <= 9) {
+  //     date = "0" + date
+  //   }
 
-    var dateformat = year + "-" + month + "-" + date
-    return
-    const query = wx.createSelectorQuery()
-    query.select(".order_eight_2").boundingClientRect()
-    query.selectViewport().scrollOffset()
-    query.exec(function (res) {
-      _this.setData({
-        scrollTops: res[0].top
-      })
-    })
-  },
+  //   var dateformat = year + "-" + month + "-" + date
+  //   return
+  //   const query = wx.createSelectorQuery()
+  //   query.select(".order_eight_2").boundingClientRect()
+  //   query.selectViewport().scrollOffset()
+  //   query.exec(function (res) {
+  //     _this.setData({
+  //       scrollTops: res[0].top
+  //     })
+  //   })
+  // },
 
   /**
    * 生命周期函数--监听页面隐藏

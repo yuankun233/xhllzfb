@@ -2,7 +2,6 @@
   "pages": [
     "pages/index/index",
     "pages/loginzfb/loginzfb",
-    "pages/login/login",
     "pages/fill/Fill",
     "pages/phone/phone",
     "pages/message/message",
