@@ -14,22 +14,20 @@
     </view>
     <view class="detil">
       <view class="detilname" style="font-family:PingFang-SC-Medium;">
-        {{name}}
-        <view class="detilxm a_b" style="font-family:PingFang-SC-Medium" ref="__subweSaveRef__">
-          PICC导管维护 基础护理
-        </view>
+        {{nurse.name}}
+        
       </view>
       <view class="detiltype">
         <image src="http://www.xiaohulaile.com/xh/p/doc/typedoc.png">
         </image>
         <view class="a_b detiltype" style="font-family: PingFang-SC-Medium;">
-          上海长护庙康护理站
+         {{nurse.hlz}}
         </view>
       </view>
       <view class="detilcontent" style="font-family:PingFang-SC-Medium;">
         <text class="a_b" style="color:#4178F0;">
-          专业擅长：
-        </text>提供PICC的管道维护服务，包括检查皮肤及管路情况、换药、健康指导。
+          护士介绍：
+        </text>{{nurse.message}}
       </view>
       <view class="detilbottom">
         <image src="http://www.xiaohulaile.com/xh/p/doc/Bluestart.png">
@@ -58,7 +56,7 @@
       </view>
     </view>
   </view>
-  <view class="xm">
+  <!-- <view class="xm">
     <view class="xm1">
       <view class="imageview a_b">
         <image src="https://www.xiaohulaile.com/wxcx/81.png">
@@ -115,5 +113,5 @@
         </view>
       </view>
     </view>
-  </view>
+  </view> -->
 </view>

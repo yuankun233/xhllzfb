@@ -1,19 +1,25 @@
-.subwe_1iXb3f.index .index_1, .subwe_1iXb3f .index .index_1 {
+/* page{
+  background-color: #fff;
+} */
+.subwe_1iXb3f.index .index_1,
+.subwe_1iXb3f .index .index_1 {
   font-size: 40rpx;
-  color: #4178F0;
+  color: #4178f0;
   font-weight: 800;
   /* margin-top: 100rpx; */
   margin-left: 14rpx;
 }
 
-.subwe_1iXb3f.index .index_top, .subwe_1iXb3f .index .index_top {
+.subwe_1iXb3f.index .index_top,
+.subwe_1iXb3f .index .index_top {
   width: 100%;
   height: 60rpx;
   margin-top: 39rpx;
   position: relative;
 }
 
-.subwe_1iXb3f.index .index_top .index_top_1, .subwe_1iXb3f .index .index_top .index_top_1 {
+.subwe_1iXb3f.index .index_top .index_top_1,
+.subwe_1iXb3f .index .index_top .index_top_1 {
   width: 34rpx;
   height: 35rpx;
   position: absolute;
@@ -21,7 +27,8 @@
   top: 13rpx;
 }
 
-.subwe_1iXb3f.index .index_top .index_top_2, .subwe_1iXb3f .index .index_top .index_top_2 {
+.subwe_1iXb3f.index .index_top .index_top_2,
+.subwe_1iXb3f .index .index_top .index_top_2 {
   position: absolute;
   width: 256rpx;
   height: 26rpx;
@@ -37,7 +44,8 @@
   /*超出部分文字以...显示*/
 }
 
-.subwe_1iXb3f.index .index_top .index_top_3, .subwe_1iXb3f .index .index_top .index_top_3 {
+.subwe_1iXb3f.index .index_top .index_top_3,
+.subwe_1iXb3f .index .index_top .index_top_3 {
   width: 16rpx;
   height: 10rpx;
   position: absolute;
@@ -45,7 +53,8 @@
   left: 328rpx;
 }
 
-.subwe_1iXb3f.index .index_top .index_top_4, .subwe_1iXb3f .index .index_top .index_top_4 {
+.subwe_1iXb3f.index .index_top .index_top_4,
+.subwe_1iXb3f .index .index_top .index_top_4 {
   width: 31rpx;
   height: 31rpx;
   position: absolute;
@@ -53,7 +62,8 @@
   left: 330rpx;
 }
 
-.subwe_1iXb3f.index .index_top .index_top_5, .subwe_1iXb3f .index .index_top .index_top_5 {
+.subwe_1iXb3f.index .index_top .index_top_5,
+.subwe_1iXb3f .index .index_top .index_top_5 {
   width: 363rpx;
   height: 56rpx;
   border: 1px solid #d6d6d6;
@@ -64,45 +74,50 @@
   padding-left: 60rpx;
 }
 
-.subwe_1iXb3f.index .I_swiper, .subwe_1iXb3f .index .I_swiper {
+.subwe_1iXb3f.index .I_swiper,
+.subwe_1iXb3f .index .I_swiper {
   width: 691rpx;
   height: 294rpx;
   margin: 0 auto;
   margin-top: 24rpx;
 }
 
-.subwe_1iXb3f.index .I_swiper image, .subwe_1iXb3f .index .I_swiper image {
+.subwe_1iXb3f.index .I_swiper image,
+.subwe_1iXb3f .index .I_swiper image {
   width: 100%;
   height: 100%;
 }
 
-.subwe_1iXb3f.index .index_bottom, .subwe_1iXb3f .index .index_bottom {
+.subwe_1iXb3f.index .index_bottom,
+.subwe_1iXb3f .index .index_bottom {
   margin-top: 87rpx;
   width: 100%;
-  height: 1570rpx;
-  background-color: #e9eefa;
+  height: 1200rpx;
+  background-color: #fff;
   position: relative;
-  border: 1px solid #e9eefa;
 }
 
-.subwe_1iXb3f.index .index_bottom .index_bottom_AA, .subwe_1iXb3f .index .index_bottom .index_bottom_AA {
+.subwe_1iXb3f.index .index_bottom .index_bottom_AA,
+.subwe_1iXb3f .index .index_bottom .index_bottom_AA {
   width: 338rpx;
   height: 154rpx;
   border-radius: 16rpx;
   background-color: #ffffff;
   position: absolute;
   top: -55rpx;
-  box-shadow: 0px 0px 8px rgba(38, 93, 213, 0.18);
+  box-shadow: 0px 0px 8px rgba(38, 93, 213, 0.15);
 }
 
-.subwe_1iXb3f.index .index_bottom .index_bottom_AA image, .subwe_1iXb3f .index .index_bottom .index_bottom_AA image {
+.subwe_1iXb3f.index .index_bottom .index_bottom_AA image,
+.subwe_1iXb3f .index .index_bottom .index_bottom_AA image {
   width: 100rpx;
   height: 99rpx;
   margin-top: 28rpx;
   margin-left: 36rpx;
 }
 
-.subwe_1iXb3f.index .index_bottom .index_bottom_AA .zy, .subwe_1iXb3f .index .index_bottom .index_bottom_AA .zy {
+.subwe_1iXb3f.index .index_bottom .index_bottom_AA .zy,
+.subwe_1iXb3f .index .index_bottom .index_bottom_AA .zy {
   color: #656565;
   font-size: 34rpx;
   font-weight: 900;
@@ -111,7 +126,8 @@
   top: 38rpx;
 }
 
-.subwe_1iXb3f.index .index_bottom .index_bottom_AA .zy_1, .subwe_1iXb3f .index .index_bottom .index_bottom_AA .zy_1 {
+.subwe_1iXb3f.index .index_bottom .index_bottom_AA .zy_1,
+.subwe_1iXb3f .index .index_bottom .index_bottom_AA .zy_1 {
   color: #656565;
   font-size: 24rpx;
   position: absolute;
@@ -119,15 +135,18 @@
   right: 31rpx;
 }
 
-.subwe_1iXb3f.index .index_bottom .index_bottom_1, .subwe_1iXb3f .index .index_bottom .index_bottom_1 {
+.subwe_1iXb3f.index .index_bottom .index_bottom_1,
+.subwe_1iXb3f .index .index_bottom .index_bottom_1 {
   left: 30rpx;
 }
 
-.subwe_1iXb3f.index .index_bottom .index_bottom_2, .subwe_1iXb3f .index .index_bottom .index_bottom_2 {
+.subwe_1iXb3f.index .index_bottom .index_bottom_2,
+.subwe_1iXb3f .index .index_bottom .index_bottom_2 {
   right: 29rpx;
 }
 
-.subwe_1iXb3f.index .index_bottom .bottom_Jujia, .subwe_1iXb3f .index .index_bottom .bottom_Jujia {
+.subwe_1iXb3f.index .index_bottom .bottom_Jujia,
+.subwe_1iXb3f .index .index_bottom .bottom_Jujia {
   width: 287rpx;
   height: 35rpx;
   border-left: 5rpx solid #265dd5;
@@ -141,7 +160,8 @@
   line-height: 36rpx;
 }
 
-.subwe_1iXb3f.index .index_bottom .bottom_ckgd, .subwe_1iXb3f .index .index_bottom .bottom_ckgd {
+.subwe_1iXb3f.index .index_bottom .bottom_ckgd,
+.subwe_1iXb3f .index .index_bottom .bottom_ckgd {
   width: 200rpx;
   text-align: right;
   height: 50rpx;
@@ -153,9 +173,12 @@
   right: 14rpx;
 }
 
-.subwe_1iXb3f.index .index_bottom .bottom_8, .subwe_1iXb3f .index .index_bottom .bottom_8 {
+.subwe_1iXb3f.index .index_bottom .bottom_8,
+.subwe_1iXb3f .index .index_bottom .bottom_8 {
+  box-sizing: border-box;
+  margin-left: 20rpx;
   width: 690rpx;
-  height: 284rpx;
+  height: 298rpx;
   background-color: #ffffff;
   border-radius: 32rpx;
   position: absolute;
@@ -164,19 +187,22 @@
   padding-left: 26rpx;
   padding-right: 26rpx;
   padding-top: 20rpx;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between; */
   box-shadow: 0px 0px 8px rgba(38, 93, 213, 0.18);
 }
 
-.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A, .subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A {
+.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A,
+.subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A {
   width: 140rpx;
   height: 118rpx;
   position: relative;
 }
 
-.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A view, .subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A view {
+.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A view,
+.subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A view {
   color: #656565;
   font-size: 28rpx;
   text-align: center;
@@ -188,85 +214,94 @@
   font-family: PingFang-SC-Regular;
 }
 
-.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A .amg_1, .subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A .amg_1 {
-  width: 93rpx;
-  height: 64rpx;
+.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A .amg_1,
+.subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A .amg_1 {
+  width: 72rpx;
+  height: 72rpx;
   position: absolute;
   left: 50%;
   bottom: 39rpx;
   transform: translateX(-50%);
 }
 
-.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A .amg_2, .subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A .amg_2 {
-  width: 80rpx;
-  height: 75rpx;
+.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A .amg_2,
+.subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A .amg_2 {
+  width: 72rpx;
+  height: 72rpx;
   position: absolute;
   left: 50%;
   bottom: 39rpx;
   transform: translateX(-50%);
 }
 
-.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A .amg_3, .subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A .amg_3 {
-  width: 81rpx;
-  height: 77rpx;
+.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A .amg_3,
+.subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A .amg_3 {
+  width: 84rpx;
+  height: 84rpx;
   position: absolute;
   left: 50%;
   bottom: 39rpx;
   transform: translateX(-50%);
 }
 
-.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A .amg_4, .subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A .amg_4 {
-  width: 77rpx;
-  height: 78rpx;
+.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A .amg_4,
+.subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A .amg_4 {
+  width: 84rpx;
+  height: 84rpx;
   position: absolute;
   left: 50%;
   bottom: 39rpx;
   transform: translateX(-50%);
 }
 
-.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A .amg_5, .subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A .amg_5 {
-  width: 69rpx;
-  height: 78rpx;
+.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A .amg_5,
+.subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A .amg_5 {
+  width: 72rpx;
+  height: 72rpx;
   position: absolute;
   left: 50%;
   bottom: 39rpx;
   transform: translateX(-50%);
 }
 
-.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A .amg_6, .subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A .amg_6 {
-  width: 85rpx;
-  height: 71rpx;
+.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A .amg_6,
+.subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A .amg_6 {
+  width: 72rpx;
+  height: 72rpx;
   position: absolute;
   left: 50%;
   bottom: 39rpx;
   transform: translateX(-50%);
 }
 
-.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A .amg_7, .subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A .amg_7 {
-  width: 75rpx;
-  height: 76rpx;
+.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A .amg_7,
+.subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A .amg_7 {
+  width: 72rpx;
+  height: 72rpx;
   position: absolute;
   left: 50%;
   bottom: 39rpx;
   transform: translateX(-50%);
 }
 
-.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A .amg_8, .subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A .amg_8 {
-  width: 77rpx;
-  height: 78rpx;
+.subwe_1iXb3f.index .index_bottom .bottom_8 .bottom_8_A .amg_8,
+.subwe_1iXb3f .index .index_bottom .bottom_8 .bottom_8_A .amg_8 {
+  width: 72rpx;
+  height: 72rpx;
   position: absolute;
   left: 50%;
   bottom: 39rpx;
   transform: translateX(-50%);
 }
 
-.subwe_1iXb3f.index .index_bottom .bottom_Jujia_1, .subwe_1iXb3f .index .index_bottom .bottom_Jujia_1 {
+.subwe_1iXb3f.index .index_bottom .bottom_Jujia_1,
+.subwe_1iXb3f .index .index_bottom .bottom_Jujia_1 {
   width: 287rpx;
   height: 35rpx;
   border-left: 5rpx solid #265dd5;
   position: absolute;
   left: 14rpx;
-  top: 1250rpx;
+  top: 870rpx;
   color: #333333;
   font-weight: 900;
   padding-left: 10rpx;
@@ -274,7 +309,8 @@
   line-height: 36rpx;
 }
 
-.subwe_1iXb3f.index .index_bottom .bottom_ckgd_1, .subwe_1iXb3f .index .index_bottom .bottom_ckgd_1 {
+.subwe_1iXb3f.index .index_bottom .bottom_ckgd_1,
+.subwe_1iXb3f .index .index_bottom .bottom_ckgd_1 {
   font-size: 24rpx;
   color: #666666;
   position: absolute;
@@ -282,10 +318,13 @@
   right: 14rpx;
 }
 
-.subwe_1iXb3f.index .index_bottom .bottom_mx, .subwe_1iXb3f .index .index_bottom .bottom_mx {
+.subwe_1iXb3f.index .index_bottom .bottom_mx,
+.subwe_1iXb3f .index .index_bottom .bottom_mx {
+  position: absolute;
+  top: 950rpx;
   width: 750rpx;
   height: 242rpx;
-  margin-top: 1300rpx;
+
   padding-left: 14rpx;
   justify-content: left;
   overflow-x: auto;
@@ -295,7 +334,8 @@
   overflow-y: hidden;
 }
 
-.subwe_1iXb3f.index .index_bottom .bottom_mx .bottom_mx_1, .subwe_1iXb3f .index .index_bottom .bottom_mx .bottom_mx_1 {
+.subwe_1iXb3f.index .index_bottom .bottom_mx .bottom_mx_1,
+.subwe_1iXb3f .index .index_bottom .bottom_mx .bottom_mx_1 {
   display: inline-block;
   width: 298rpx;
   height: 242rpx;
@@ -314,7 +354,7 @@
   border-left: 5rpx solid #265dd5;
   position: absolute;
   left: 14rpx;
-  top: 521rpx;
+  top: 142rpx;
   color: #333333;
   font-weight: 900;
   padding-left: 10rpx;
@@ -323,22 +363,23 @@
 }
 .index .index_bottom .bottom_mx2 {
   position: absolute;
-  top: 490rpx;
+  top: 205rpx;
   width: 750rpx;
-  margin-top: 80rpx;
   padding-left: 14rpx;
-  justify-content: left;
-  overflow-x: auto;
-  /*x轴超出后可滚动*/
-  white-space: nowrap;
-  /*实现子元素不换行*/
-  overflow-y: hidden;
+  height: 650rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  /* x轴超出后可滚动
+  white-space: nowrap; */
 }
 .index .index_bottom .bottom_mx2 .bottom_mx_1 {
   display: inline-block;
   width: 216rpx;
   height: 300rpx;
-  margin-right: 40rpx;
+  margin-right: 30rpx;
 }
 .index .index_bottom .bottom_mx2 .bottom_mx_1 .bottom_mx_img {
   width: 216rpx;
@@ -360,7 +401,7 @@
   font-size: 28rpx;
   font-family: PingFangSC-Regular;
   margin-top: 7rpx;
-  color: #FF6C00;
+  color: #ff6c00;
 }
 
 .index .index_bottom .bottom_Jujia_3 {
@@ -416,5 +457,17 @@
   font-size: 28rpx;
   font-family: PingFangSC-Regular;
   margin-top: 7rpx;
-  color: #FF6C00;
+  color: #ff6c00;
+}
+.flexbox1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexbox2 {
+  margin-top: 15rpx;
+  width: 303rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
