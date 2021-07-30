@@ -1,13 +1,15 @@
 import wx from "../../subwe/bridge"
 import WXPage from "../../subwe/page"
+import { $myrequest } from "../../utils/request" // 引入ajax请求方法
 // pages/start/start.js
 WXPage({
   /**
    * 页面的初始数据
    */
   data: {
-    name: "",
-    num: ""
+    hushi1: "http://www.xiaohulaile.com/xh/p/doc/hushi1.png",
+    hushi2: "http://www.xiaohulaile.com/xh/p/doc/hushi2.png",
+    zghs: "http://www.xiaohulaile.com/xh/p/doc/zhuguanhushi.png"
   },
   back: function () {
     wx.navigateBack({})
@@ -33,7 +35,21 @@ WXPage({
       })
     }
   },
-
+  // 根据ID获取某一护士信息
+  async getNurse(nurseid) {
+    // 请求护士信息
+    const res = await $myrequest({
+      url: "/nurse/index",
+      data: {
+        id: nurseid
+      }
+    })
+    console.log(res)
+    // 设置到data中
+    this.setData({
+      nurse: res.data
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -41,47 +57,10 @@ WXPage({
     wx.showLoading({
       title: "加载中..."
     })
-    console.log(options.nurse)
+    console.log("当前护士id:" + options.nurseid)
+    // 请求护士信息
+    this.getNurse(options.nurseid)
 
-    const nurse = JSON.parse(options.nurse)
-    this.setData({
-      nurse: nurse
-    })
     wx.hideLoading()
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {},
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {},
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {},
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {},
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {},
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {},
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {}
+  }
 })

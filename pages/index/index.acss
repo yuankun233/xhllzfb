@@ -337,8 +337,8 @@
 .subwe_1iXb3f.index .index_bottom .bottom_mx .bottom_mx_1,
 .subwe_1iXb3f .index .index_bottom .bottom_mx .bottom_mx_1 {
   display: inline-block;
-  width: 298rpx;
-  height: 242rpx;
+  width: 338rpx;
+  height: 241rpx;
   margin-right: 20rpx;
   box-shadow: 0px 0px 8px rgba(38, 93, 213, 0.18);
 }

@@ -1,5 +1,6 @@
 import wx from "../../subwe/bridge"
 import WXPage from "../../subwe/page"
+import { $myrequest } from "../../utils/request" // 引入ajax请求方法
 // pages/index/index.js
 WXPage({
   /**
@@ -13,69 +14,14 @@ WXPage({
     duration: 500,
     address: "加载中..",
     list: "",
-    swiperIcon: [
-      {
-        name: "肌肉注射",
-        pic_url: "https://www.xiaohulaile.com/wxcx/icon/jirouzhushe.png"
-      },
-      {
-        name: "肌肉注射",
-        pic_url: "https://www.xiaohulaile.com/wxcx/icon/jirouzhushe.png"
-      },
-      {
-        name: "肌肉注射",
-        pic_url: "https://www.xiaohulaile.com/wxcx/icon/jirouzhushe.png"
-      },
-      {
-        name: "肌肉注射",
-        pic_url: "https://www.xiaohulaile.com/wxcx/icon/jirouzhushe.png"
-      },
-      {
-        name: "肌肉注射",
-        pic_url: "https://www.xiaohulaile.com/wxcx/icon/jirouzhushe.png"
-      },
-      {
-        name: "肌肉注射",
-        pic_url: "https://www.xiaohulaile.com/wxcx/icon/jirouzhushe.png"
-      }
-    ],
     // 护士列表
-    nurseList: [
-      {
-        name: "富护士",
-        pic_url: "https://www.xiaohulaile.com/wxcx/startdoc/fhs.png",
-        hlz: "上海常护通康护理站",
-        message:
-          "毕业于齐齐哈尔市医学院护理系，从事临床工作8年，持有专业护理证书，具有临床护理方面工作经验，熟练掌握长期卧床病人的各类导管护理（PICC维护、胃管插管、女病人导尿管更换），压疮换药，肌肉注射，导管维护的护理。"
-      },
-      {
-        name: "李护士",
-        pic_url: "https://www.xiaohulaile.com/wxcx/startdoc/lhs.png",
-        hlz: "上海常护庙康护理站",
-        message:
-          "毕业于郑州医学院校护理专业，从事临床工作30年，持有执业护士证书，特别擅长造口、胃管、导尿管、各类外伤、换药。"
-      },
-      {
-        name: "蒋护士",
-        pic_url: "https://www.xiaohulaile.com/wxcx/startdoc/jhs.png",
-        hlz: "上海常护通康护理站",
-        message:
-          "毕业于山西省太原市卫生学校，后就读于山西省职工医学院高级护理专业，从事急诊  ICU工作30年，具有丰富的临床抢救，日常护理常规，各项护理操作的经验。"
-      },
-      {
-        name: "武护士",
-        pic_url: "https://www.xiaohulaile.com/wxcx/startdoc/whs.png",
-        hlz: "上海常护霞康护理站",
-        message:
-          "毕业于九江学院护理专业，从事临床护理工作9年，持有执业护士证书，具有丰富的内科、妇科等护理工作经验，熟练掌握肌肉注射、静脉穿刺、女性导尿管插管、Picc维护、造口护理等护理操作。尤其擅长肌肉注射、女性导尿管插管及维护、picc维护。"
-      }
-    ]
+    nurseList: ""
   },
 
   gostart(e) {
-    const nurse = JSON.stringify(e.currentTarget.dataset.nurse)
+    const nurseid = JSON.stringify(e.currentTarget.dataset.nurseid)
     wx.navigateTo({
-      url: `/pages/start/start?nurse=${nurse}`
+      url: `/pages/start/start?nurseid=${nurseid}`
     })
   },
 
@@ -197,6 +143,17 @@ WXPage({
       url: `/pages/order/order_eight/order_eight?index=${e.currentTarget.dataset.id}`
     })
   },
+  //获取护士列表的方法
+  async getNurseList() {
+    // 请求护士列表
+    const res = await $myrequest({
+      url: "/nurse/list"
+    })
+    // 储存到data
+    this.setData({
+      nurseList: res.data
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -237,6 +194,7 @@ WXPage({
       complete: function (res) {}
     })
     var _this = this
+    //获取服务列表
     wx.request({
       url: "https://www.xiaohulaile.com/xh/p/gw/project/get_list",
       header: {
@@ -252,55 +210,8 @@ WXPage({
         console.log(_this.data.list)
       }
     })
-    wx.request({
-      url: "https://www.xiaohulaile.com/xh/p/gw/project/get_list",
-      header: {
-        "content-type": "application/json" // 默认值
-      },
-      data: {
-        cate: 3
-      },
-      success(res) {
-        _this.setData({
-          lists: res.data.data.data
-        })
-        wx.hideLoading()
-      }
-    })
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {},
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {},
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {},
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {},
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {},
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {},
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {}
+    // 获取护士列表
+    this.getNurseList()
+    console.log("获取护士列表")
+  }
 })

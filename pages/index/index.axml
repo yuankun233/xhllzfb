@@ -66,8 +66,7 @@
             导尿(男)</view></view><view data-id="33" class="bottom_8_A" onTap="go_eight"><image class="amg_4" src="https://www.xiaohulaile.com/wxcx/icon/dngw.png"></image><view>
             导尿(女)</view></view></view><view class="flexbox2"><view data-id="16" class="bottom_8_A" onTap="go_eight"><image class="amg_5" src="https://www.xiaohulaile.com/wxcx/icon/shangkou.png"></image><view>
             伤口换药</view></view><view data-id="35" class="bottom_8_A" onTap="go_eight"><image class="amg_6" src="https://www.xiaohulaile.com/wxcx/icon/yidaosu.png"></image><view>
-            皮下注射</view></view></view>
-</view> -->
+            皮下注射</view></view></view></view> -->
 
     <!-- 去除专业护理、生活照料模块 -->
     <view class="bottom_Jujia_2">
@@ -89,10 +88,8 @@
       明星服务团队
     </view>
     <view class="bottom_mx">
-      
-      <image src="{{item.pic_url}}" class="bottom_mx_1" onTap="gostart" data-nurse='{{item}}' a:for="{{nurseList}}">
+      <image src="{{item.map}}" class="bottom_mx_1" onTap="gostart" data-nurseid='{{item.id}}' a:for="{{nurseList}}">
       </image>
-      
     </view>
   </view>
   <view style="width:750rpx;height:70rpx;line-height: 70rpx; text-align:center;font-size:28rpx;color:#ccc;background-color:#fff">
