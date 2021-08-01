@@ -702,7 +702,7 @@ WXPage({
             })
 
             _this.setData({
-              total_fee:  _this.data.price
+              total_fee: _this.data.price
             })
           }
         })

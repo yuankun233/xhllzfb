@@ -273,16 +273,17 @@
                       </view>
                     </view>
                     </view>
-                    <view class="cu-modal {{modalName=='RadioModal'?'show':''}} subwe_Z1nO6TY" onTap="hideModal">
-                      <view class="cu-dialog" catchTap>
-                        <radio-group class="block" onChange="radioChange">
+                    <!--选择服务人员-->
+                    <view class="cu-modal {{modalName=='RadioModal'?'show':''}} subwe_Z1nO6TY" catchTap="hideModal">
+                      <view class="cu-dialog">
+                        <radio-group class="block" onChange="radioChange" catchTap="hideModal">
                           <view class="cu-list menu text-left">
                             <view class="cu-item" a:if="{{user_list!==''}}" a:for="{{user_list}}" a:key="">
                               <label class="flex justify-between align-center flex-sub">
                                 <view class="flex-sub">
                                   {{item.name}}
                                 </view>
-                                <radio value="{{item.id}}" class="round" style="right: 5px;">
+                                <radio value="{{item.id}}" style="right: 5px;">
                                 </radio>
                               </label>
                             </view>
@@ -296,8 +297,9 @@
                         </radio-group>
                       </view>
                     </view>
-                    <view class="cu-modal {{modalName=='RadioModal_1'?'show':''}} subwe_Z1nO6TY" onTap="hideModal">
-                      <view class="cu-dialog" catchTap>
+                    <!--选择服务时间段-->
+                    <view class="cu-modal {{modalName=='RadioModal_1'?'show':''}} subwe_Z1nO6TY" catchTap="hideModal">
+                      <view class="cu-dialog" catchTap="hideModal">
                         <radio-group class="block" onChange="radioChange_1">
                           <view class="cu-list menu text-left">
                             <view class="cu-item" a:for="{{times}}" a:key="">
@@ -305,7 +307,7 @@
                                 <view class="flex-sub">
                                   {{item.time}}
                                 </view>
-                                <radio value="{{item.id}}" class="round">
+                                <radio value="{{item.id}}">
                                 </radio>
                               </label>
                             </view>

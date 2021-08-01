@@ -10,7 +10,7 @@ WXPage({
     name: '',
     sex: '',
     date: '',
-    region: '请输入',
+    region: '请选择',
     number: '',
     text: '',
     address: '',

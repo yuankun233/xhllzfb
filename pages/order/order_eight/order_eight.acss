@@ -534,7 +534,7 @@ page {
   font-size: 33.6rpx;
   font-family: PingFang-SC-Medium;
   font-weight: 600;
-  color: #4178F0;
+  color: #4178f0;
   border-left: 4px solid #ff9c00;
   text-align: center;
   margin-top: 20rpx;
@@ -628,7 +628,7 @@ page {
   white-space: pre-wrap;
   font-size: 26rpx;
   font-family: PingFang SC;
-  color: #ef6161;
+  color: #333;
   line-height: 48rpx;
   text-align: left;
   margin-top: 10rpx;
@@ -920,8 +920,8 @@ page {
   z-index: 9;
 }
 /* 服务流程 */
-.server{
-  margin-top:15rpx;
+.server {
+  margin-top: 15rpx;
   margin-bottom: 15rpx;
 }
 .server view {
@@ -931,6 +931,15 @@ page {
   color: #585858;
   line-height: 60rpx;
 }
-.text11{
+.text11 {
   font-size: 28.8rpx !important;
+}
+/* 清除默认样式 */
+/* 单选框样式 */
+.a-radio {
+  color: rgba(0, 0, 0, 0);
+}
+/* 复选框样式 */
+.a-checkbox {
+  color: rgba(0, 0, 0, 0);
 }
