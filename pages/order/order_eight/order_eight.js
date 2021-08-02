@@ -164,7 +164,7 @@ WXPage({
       key: "user",
 
       success(res) {
-        console.log(res.data)
+        console.log("huoqubfw：" + res.data)
 
         _this.setData({
           users: res.data
@@ -184,7 +184,7 @@ WXPage({
           },
 
           success(res) {
-            console.log(res.data.data)
+            console.log("获取用户健康档案：" + res.data.data)
 
             _this.setData({
               user_list: res.data.data
@@ -517,6 +517,23 @@ WXPage({
     })
 
     console.log("付钱")
+    let data = {
+      subject: _this.data.eightList.title,
+      project_id: _this.data.eightList.id,
+      num: _this.data.nums,
+      total_amount: _this.data.total_fee,
+      archive_id: _this.data.archive_id,
+      time_slot: _this.data.time_slot,
+      content: _this.data.text,
+      minute: 1,
+      buyer_id: _this.data.users.openid,
+      start_time: _this.data.data,
+      my_id: _this.data.users.my_id,
+      consumables_num: _this.data.numes,
+      consumables: _this.data.eightList.pid
+    }
+    console.dir(data)
+    console.log("firstrequest参数:" + data)
     my.request({
       url: "https://www.xiaohulaile.com/xh/p/zfbxcx/pay/aliPay",
       header: {
@@ -540,8 +557,10 @@ WXPage({
       },
 
       success(res) {
-        console.log("支付结果：" + res.data)
+        console.log("request1结果：" + res.data)
+        console.log(res)
         var trade_no_1 = res.data.alipay_trade_create_response.trade_no
+        console.log(trade_no_1)
         if (res.data.alipay_trade_create_response.msg == "Success") {
           my.tradePay({
             tradeNO: res.data.alipay_trade_create_response.trade_no,
@@ -631,6 +650,9 @@ WXPage({
         //     url: '/pages/home/login/login'
         //   });
         // }
+      },
+      fail(res) {
+        console.log("支付失败" + res)
       }
     })
   },
@@ -657,7 +679,7 @@ WXPage({
       key: "user",
 
       success(res) {
-        console.log(res.data)
+        console.log("获取user成功：", res.data)
 
         _this.setData({
           user: res.data

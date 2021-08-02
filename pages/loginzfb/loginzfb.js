@@ -149,7 +149,7 @@ WXPage({
                   wx_openid: _this.data.user.user_id,
                   nickname:
                     _this.data.user.nickName === undefined
-                      ? ""
+                      ? "新用户"
                       : _this.data.user.nickName,
                   sex: _this.data.userInfo.gender,
                   head_logo: _this.data.userInfo.avatar,
