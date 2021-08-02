@@ -677,7 +677,7 @@ page {
   width: 50%;
   height: 89rpx;
   background: #4178f0;
-  border-radius: 0px 0px 10rpx 10rpx;
+  border-radius: 0px 0px 10rpx 0rpx;
   font-size: 28rpx;
   font-family: Source Han Sans CN;
   font-weight: 500;

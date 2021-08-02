@@ -138,7 +138,7 @@
 .subwe_1iXb3f.index .index_bottom .index_bottom_1,
 .subwe_1iXb3f .index .index_bottom .index_bottom_1 {
   left: 30rpx;
-  background-color: #AFEEEE;
+  background-color: #fff;
 }
 
 .subwe_1iXb3f.index .index_bottom .index_bottom_2,

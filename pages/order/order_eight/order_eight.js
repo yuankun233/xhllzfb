@@ -125,8 +125,8 @@ WXPage({
 
   // 拟态框
   showModal(e) {
-    console.log(1233)
-    console.log(e)
+    // console.log(1233)
+    // console.log(e)
     this.huoqubfw()
     this.setData({
       modalName: e.currentTarget.dataset.target
@@ -494,10 +494,10 @@ WXPage({
   payFnzfb() {
     var _this = this
     console.log("付钱zf1")
-
+    // 未选择信息则不允许下单
     if (
       _this.data.archive_id == "" ||
-      _this.data.data == "" ||
+      _this.data.data == "请选择服务日期" ||
       _this.data.time_slot == ""
     ) {
       wx.showToast({
@@ -507,11 +507,11 @@ WXPage({
       })
       return
     }
-
+    // 如果已经支付则跳出方法
     if (_this.data.isPay) {
       return
     }
-
+    // 设置订单状态为已支付
     _this.setData({
       isPay: true
     })
@@ -540,8 +540,7 @@ WXPage({
       },
 
       success(res) {
-        console.log(res, "11")
-        console.log(res.data, "22")
+        console.log("支付结果：" + res.data)
         var trade_no_1 = res.data.alipay_trade_create_response.trade_no
         if (res.data.alipay_trade_create_response.msg == "Success") {
           my.tradePay({
@@ -578,10 +577,10 @@ WXPage({
               //   content: JSON.stringify(res),
               // });
 
-              return
-              wx.redirectTo({
-                url: "/pages/order/order?index=0"
-              })
+              // return
+              // wx.redirectTo({
+              //   url: "/pages/order/order?index=0"
+              // })
             },
             fail: function (res) {
               my.alert({

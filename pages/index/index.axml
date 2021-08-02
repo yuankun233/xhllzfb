@@ -38,7 +38,7 @@
   </view>
   <view class="index_bottom">
     <view class="index_bottom_1 index_bottom_AA" onTap="goSpecialty">
-      <image src="https://www.xiaohulaile.com/wxcx/yuyue.png">
+      <image src="https://www.xiaohulaile.com/wxcx/tel.png">
       </image>
       <view class="zy">
         专业解答
@@ -48,7 +48,7 @@
       </view>
     </view>
     <view class="index_bottom_2 index_bottom_AA" onTap="goAppointment">
-      <image src="https://www.xiaohulaile.com/wxcx/zhuanye.png">
+      <image src="https://www.xiaohulaile.com/wxcx/doct.png">
       </image>
       <view class="zy">
         预约服务
