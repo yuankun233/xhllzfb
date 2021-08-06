@@ -517,23 +517,23 @@ WXPage({
     })
 
     console.log("付钱")
-    let data = {
-      subject: _this.data.eightList.title,
-      project_id: _this.data.eightList.id,
-      num: _this.data.nums,
-      total_amount: _this.data.total_fee,
-      archive_id: _this.data.archive_id,
-      time_slot: _this.data.time_slot,
-      content: _this.data.text,
-      minute: 1,
-      buyer_id: _this.data.users.openid,
-      start_time: _this.data.data,
-      my_id: _this.data.users.my_id,
-      consumables_num: _this.data.numes,
-      consumables: _this.data.eightList.pid
-    }
-    console.dir(data)
-    console.log("firstrequest参数:" + data)
+    // let data = {
+    //   subject: _this.data.eightList.title,
+    //   project_id: _this.data.eightList.id,
+    //   num: _this.data.nums,
+    //   total_amount: _this.data.total_fee,
+    //   archive_id: _this.data.archive_id,
+    //   time_slot: _this.data.time_slot,
+    //   content: _this.data.text,
+    //   minute: 1,
+    //   buyer_id: _this.data.users.openid,
+    //   start_time: _this.data.data,
+    //   my_id: _this.data.users.my_id,
+    //   consumables_num: _this.data.numes,
+    //   consumables: _this.data.eightList.pid
+    // }
+    // console.dir(data)
+    // console.log("firstrequest参数:" + data)
     my.request({
       url: "https://www.xiaohulaile.com/xh/p/zfbxcx/pay/aliPay",
       header: {

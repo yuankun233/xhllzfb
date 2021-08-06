@@ -326,7 +326,7 @@ page {
   width: 750rpx;
   background-color: #ffffff;
   margin-top: 20rpx;
-  padding: 20rpx 30rpx 20rpx 30rpx;
+  padding: 20rpx;
 }
 
 .subwe_Z1nO6TY.order_eight .order_eight_mark .order_eight_mark_text,
@@ -542,9 +542,9 @@ page {
 
 .subwe_Z1nO6TY.order_eight .order_eight_2 .order_eight_25,
 .subwe_Z1nO6TY .order_eight .order_eight_2 .order_eight_25 {
+  box-sizing: border-box;
   margin-top: 22rpx;
-  padding-top: 10rpx;
-  padding-left: 17rpx;
+  padding: 10rpx;
   width: 702rpx;
   background: #f7f7f7;
   border-radius: 10rpx;

@@ -10,7 +10,7 @@ WXPage({
     list: "",
     checkbox: "",
     modalName: "",
-    isPay: false//控制支付状态
+    isPay: false //控制支付状态
   },
 
   quxiao() {
@@ -20,30 +20,33 @@ WXPage({
       title: "提示",
       content: "取消订单之后需重新下单",
       success: function (res) {
-        wx.request({
-          url: "https://www.xiaohulaile.com/xh/p/zfbxcx/pay/close_order",
-          header: {
-            "content-type": "application/x-www-form-urlencoded"
-          },
-          method: "post",
-          data: {
-            id: _this.data.list.id
-          },
+       //用户点击确定取消订单
+        if (res.confirm) {
+          wx.request({
+            url: "https://www.xiaohulaile.com/xh/p/zfbxcx/pay/close_order",
+            header: {
+              "content-type": "application/x-www-form-urlencoded"
+            },
+            method: "post",
+            data: {
+              id: _this.data.list.id
+            },
 
-          success(res) {
-            console.log(res, "1")
-            console.log(res.data, "2")
-            console.log(res.data.data, "3")
-            if (res.data.msg == "取消成功") {
-              my.alert({
-                title: "取消成功"
-              })
-              my.reLaunch({
-                url: "/pages/my/my"
-              })
+            success(res) {
+              console.log(res, "1")
+              console.log(res.data, "2")
+              console.log(res.data.data, "3")
+              if (res.data.msg == "取消成功") {
+                my.alert({
+                  title: "取消成功"
+                })
+                my.reLaunch({
+                  url: "/pages/my/my"
+                })
+              }
             }
-          }
-        })
+          })
+        }
       }
     })
   },
