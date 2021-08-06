@@ -111,7 +111,7 @@ page {
   margin-left: 36rpx;
 }
 .merdetails .list .detil .detilcontent {
-  font-size: 24rpx;
+  font-size: 28.8rpx;
   font-family: PingFang SC;
   font-weight: normal;
 

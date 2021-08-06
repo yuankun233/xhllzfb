@@ -326,7 +326,7 @@ page {
   width: 750rpx;
   background-color: #ffffff;
   margin-top: 20rpx;
-  padding: 20rpx 30rpx 20rpx 30rpx;
+  padding: 20rpx;
 }
 
 .subwe_Z1nO6TY.order_eight .order_eight_mark .order_eight_mark_text,
@@ -534,7 +534,7 @@ page {
   font-size: 33.6rpx;
   font-family: PingFang-SC-Medium;
   font-weight: 600;
-  color: #4178F0;
+  color: #4178f0;
   border-left: 4px solid #ff9c00;
   text-align: center;
   margin-top: 20rpx;
@@ -542,9 +542,9 @@ page {
 
 .subwe_Z1nO6TY.order_eight .order_eight_2 .order_eight_25,
 .subwe_Z1nO6TY .order_eight .order_eight_2 .order_eight_25 {
+  box-sizing: border-box;
   margin-top: 22rpx;
-  padding-top: 10rpx;
-  padding-left: 17rpx;
+  padding: 10rpx;
   width: 702rpx;
   background: #f7f7f7;
   border-radius: 10rpx;
@@ -628,7 +628,7 @@ page {
   white-space: pre-wrap;
   font-size: 26rpx;
   font-family: PingFang SC;
-  color: #ef6161;
+  color: #333;
   line-height: 48rpx;
   text-align: left;
   margin-top: 10rpx;
@@ -677,7 +677,7 @@ page {
   width: 50%;
   height: 89rpx;
   background: #4178f0;
-  border-radius: 0px 0px 10rpx 10rpx;
+  border-radius: 0px 0px 10rpx 0rpx;
   font-size: 28rpx;
   font-family: Source Han Sans CN;
   font-weight: 500;
@@ -920,8 +920,8 @@ page {
   z-index: 9;
 }
 /* 服务流程 */
-.server{
-  margin-top:15rpx;
+.server {
+  margin-top: 15rpx;
   margin-bottom: 15rpx;
 }
 .server view {
@@ -931,6 +931,15 @@ page {
   color: #585858;
   line-height: 60rpx;
 }
-.text11{
+.text11 {
   font-size: 28.8rpx !important;
+}
+/* 清除默认样式 */
+/* 单选框样式 */
+.a-radio {
+  color: rgba(0, 0, 0, 0);
+}
+/* 复选框样式 */
+.a-checkbox {
+  color: rgba(0, 0, 0, 0);
 }

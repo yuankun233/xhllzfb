@@ -1,4 +1,4 @@
 {
-  "ignoreHttpDomainCheck": false,
+  "ignoreHttpDomainCheck": true,
   "enableDistFileMinify": false
 }

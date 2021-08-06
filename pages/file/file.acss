@@ -1,4 +1,5 @@
-.subwe_1XDOkW.file .JBXX, .subwe_1XDOkW .file .JBXX {
+.subwe_1XDOkW.file .JBXX,
+.subwe_1XDOkW .file .JBXX {
   color: #333333;
   font-size: 34rpx;
   font-family: PingFang-SC-Bold;
@@ -7,7 +8,8 @@
   margin-left: 13rpx;
 }
 
-.subwe_1XDOkW.file .file_I, .subwe_1XDOkW .file .file_I {
+.subwe_1XDOkW.file .file_I,
+.subwe_1XDOkW .file .file_I {
   display: flex;
   height: 107rpx;
   border-bottom: 1px solid #f7f7f7;
@@ -16,48 +18,57 @@
   position: relative;
 }
 
-.subwe_1XDOkW.file .file_I view, .subwe_1XDOkW .file .file_I view {
+.subwe_1XDOkW.file .file_I view,
+.subwe_1XDOkW .file .file_I view {
   line-height: 107rpx;
   color: #333333;
   font-size: 34rpx;
   font-family: PingFang-SC-Regular;
 }
 
-.subwe_1XDOkW.file .file_I .file_I_1, .subwe_1XDOkW .file .file_I .file_I_1 {
+.subwe_1XDOkW.file .file_I .file_I_1,
+.subwe_1XDOkW .file .file_I .file_I_1 {
   margin-left: 150rpx;
   margin-top: 34rpx;
 }
 
-.subwe_1XDOkW.file .file_I .sex, .subwe_1XDOkW .file .file_I .sex {
+.subwe_1XDOkW.file .file_I .sex,
+.subwe_1XDOkW .file .file_I .sex {
   margin-right: 33rpx;
   display: flex;
 }
 
-.subwe_1XDOkW.file .file_I radio, .subwe_1XDOkW .file .file_I radio {
+.subwe_1XDOkW.file .file_I radio,
+.subwe_1XDOkW .file .file_I radio {
   margin-right: 33rpx;
   margin-top: 38rpx;
 }
 
-.subwe_1XDOkW.file .file_I .sex_1, .subwe_1XDOkW .file .file_I .sex_1 {
+.subwe_1XDOkW.file .file_I .sex_1,
+.subwe_1XDOkW .file .file_I .sex_1 {
   margin-right: 182rpx;
 }
 
-.subwe_1XDOkW.file .file_I text, .subwe_1XDOkW .file .file_I text {
+.subwe_1XDOkW.file .file_I text,
+.subwe_1XDOkW .file .file_I text {
   color: #333333;
   font-size: 34rpx;
   display: block;
   margin-top: 28rpx;
 }
 
-.subwe_1XDOkW.file .file_I radio-group, .subwe_1XDOkW .file .file_I radio-group {
+.subwe_1XDOkW.file .file_I radio-group,
+.subwe_1XDOkW .file .file_I radio-group {
   display: flex;
 }
 
-.subwe_1XDOkW.file .file_I .file_I_CS, .subwe_1XDOkW .file .file_I .file_I_CS {
+.subwe_1XDOkW.file .file_I .file_I_CS,
+.subwe_1XDOkW .file .file_I .file_I_CS {
   margin-right: 150rpx;
 }
 
-.subwe_1XDOkW.file .file_I .file_I_cc, .subwe_1XDOkW .file .file_I .file_I_cc {
+.subwe_1XDOkW.file .file_I .file_I_cc,
+.subwe_1XDOkW .file .file_I .file_I_cc {
   position: absolute;
   width: 9.6rpx;
   height: 18rpx;
@@ -65,49 +76,58 @@
   right: 16rpx;
 }
 
-.subwe_1XDOkW.file .file_I .file_I_number, .subwe_1XDOkW .file .file_I .file_I_number {
+.subwe_1XDOkW.file .file_I .file_I_number,
+.subwe_1XDOkW .file .file_I .file_I_number {
   margin-top: 34rpx;
 }
 
-.subwe_1XDOkW.file .file_I .file_I_dz, .subwe_1XDOkW .file .file_I .file_I_dz {
+.subwe_1XDOkW.file .file_I .file_I_dz,
+.subwe_1XDOkW .file .file_I .file_I_dz {
   margin-right: 150rpx;
 }
 
-.subwe_1XDOkW.file .file_I .file_I_dz input, .subwe_1XDOkW .file .file_I .file_I_dz input {
+.subwe_1XDOkW.file .file_I .file_I_dz input,
+.subwe_1XDOkW .file .file_I .file_I_dz input {
   margin-top: 34rpx;
 }
 
-.subwe_1XDOkW.file .file_bottom, .subwe_1XDOkW .file .file_bottom {
+.subwe_1XDOkW.file .file_bottom,
+.subwe_1XDOkW .file .file_bottom {
   padding-left: 13rpx;
   width: 275rpx;
   height: 33rpx;
   margin-top: 31rpx;
 }
 
-.subwe_1XDOkW.file .file_bottom .file_bottom_1, .subwe_1XDOkW .file .file_bottom .file_bottom_1 {
+.subwe_1XDOkW.file .file_bottom .file_bottom_1,
+.subwe_1XDOkW .file .file_bottom .file_bottom_1 {
   display: flex;
 }
 
-.subwe_1XDOkW.file .file_bottom .file_bottom_1 view, .subwe_1XDOkW .file .file_bottom .file_bottom_1 view {
+.subwe_1XDOkW.file .file_bottom .file_bottom_1 view,
+.subwe_1XDOkW .file .file_bottom .file_bottom_1 view {
   color: #333333;
   font-size: 34rpx;
   font-weight: 900;
   line-height: 33rpx;
 }
 
-.subwe_1XDOkW.file .file_bottom .file_bottom_1 text, .subwe_1XDOkW .file .file_bottom .file_bottom_1 text {
+.subwe_1XDOkW.file .file_bottom .file_bottom_1 text,
+.subwe_1XDOkW .file .file_bottom .file_bottom_1 text {
   color: #cccccc;
   font-size: 20rpx;
   line-height: 24px;
 }
 
-.subwe_1XDOkW.file .file_bottom textarea, .subwe_1XDOkW .file .file_bottom textarea {
+.subwe_1XDOkW.file .file_bottom textarea,
+.subwe_1XDOkW .file .file_bottom textarea {
   height: 332rpx;
   width: 724rpx;
   margin-top: 36rpx;
 }
 
-.subwe_1XDOkW.file .push, .subwe_1XDOkW .file .push {
+.subwe_1XDOkW.file .push,
+.subwe_1XDOkW .file .push {
   width: 690rpx;
   height: 88rpx;
   background-color: #4178f0;
@@ -147,7 +167,7 @@ page {
   width: 40rpx !important;
   /* 最好是4的倍数，不然会不在中间 */
   height: 40rpx !important;
-  border: 1rpx solid #666 !important;
+  /* border: 1rpx solid #666 !important; */
   /* 设置边框（外圆） */
   font-size: 0;
   /* 让边框重合 */
@@ -168,8 +188,8 @@ page {
 
 .subwe_1XDOkW radio::before,
 .subwe_1XDOkW checkbox::before {
-  font-family: 'cuIcon';
-  content: '\e645';
+  font-family: "cuIcon";
+  content: "\e645";
   position: absolute;
   color: var(--white) !important;
   top: 50%;
@@ -189,18 +209,32 @@ page {
 }
 
 .subwe_1XDOkW .CC {
-  color: #cccccc !important;
+  /* color: #333 !important; */
   font-size: 34rpx;
 }
-.page-section_1{
-  color: #d2d2d2 !important;
+
+.page-section_1 {
+  color: #000 !important;
   font-size: 34rpx;
-  margin-top: 28rpx
+  margin-top: 28rpx;
 }
-.address-picker{
+.address-picker {
   top: -5.5rem !important;
   z-index: 999;
 }
-.a-radio{
+/* .a-radio {
   border: unset !important;
+}
+.btn-box {
+  border-bottom: none !important;
+} */
+
+/* 清除默认样式 */
+/* 单选框样式 */
+.a-radio {
+  color: rgba(0, 0, 0, 0);
+}
+/* 复选框样式 */
+.a-checkbox {
+  color: rgba(0, 0, 0, 0);
 }
