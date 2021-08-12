@@ -44,8 +44,8 @@
     <view class="list_chose">
       已选：{{list.body}}
     </view>
-    <view class="list_workuser" a:if="{{list.attend_id!==null}}">
-      护理人员：王小蒙
+    <view class="list_workuser" a:if="{{list.attendphone}}">
+      护理人员：{{list.attendphone}}
     </view>
   </view>
   <view class="order_info">
