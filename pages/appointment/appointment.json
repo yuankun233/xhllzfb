@@ -1,4 +1,5 @@
 {
   "usingComponents": {},
-  "defaultTitle": "要照护，找小护"
+  "defaultTitle": "要照护，找小护",
+  "titleBarColor": "#4178F0"
 }
