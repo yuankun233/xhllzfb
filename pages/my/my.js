@@ -38,8 +38,8 @@ WXPage({
       // url: 'https://159.75.47.247/xh/p/wxcx/my/archive',
       method: "post",
       data: {
-        user_token: _this.data.users.user_token,
-        my_id: _this.data.users.my_id
+        user_token: _this.data.user.user_token,
+        my_id: _this.data.user.id
       },
       header: {
         "content-type": "application/json" // 默认值
@@ -137,9 +137,7 @@ WXPage({
       success(res) {
         console.log(res.data)
 
-        _this.setData({
-          users: res.data
-        })
+        
         // 获取用户健康档案
         wx.request({
           url: "https://www.xiaohulaile.com/xh/p/wxcx/my/my",

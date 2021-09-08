@@ -44,6 +44,7 @@
     <view class="list_chose">
       已选：{{list.body}}
     </view>
+    <view>已服务次数:{{list.order_num}}</view>
     <view class="list_workuser" a:if="{{list.attendphone}}">
       护理人员：{{list.attendphone}}
     </view>
