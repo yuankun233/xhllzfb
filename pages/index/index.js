@@ -15,6 +15,7 @@ WXPage({
     address: "加载中..",
     list: "", //临床护理服务列表
     professionlist: [], //专业护理服务列表
+    homelist:'',// 居家健康服务列表
     // 护士列表
     nurseList: ""
   },
@@ -246,6 +247,33 @@ WXPage({
     })
     wx.hideLoading()
   },
+  //获取居家康复的方法
+  async getHomeList() {
+    wx.showLoading({
+      title: "加载中...",
+      mask: true
+    })
+    // 请求居家康复列表
+    const res = await $myrequest({
+      url: "/project/get_list",
+      data: {
+        cate: 3
+      }
+    })
+    let serve = res.data.data
+    // let serve1 = serve.slice(0, 3)
+    // serve1.forEach((item) => {
+    //   serve.push(item)
+    // })
+    // console.log(serve1)
+    console.log("获取居家服务列表", res)
+
+    // 储存到data
+    this.setData({
+      homelist: serve
+    })
+    wx.hideLoading()
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -260,5 +288,7 @@ WXPage({
 
     // 获取专科服务列表
     this.getProfessionList()
+    // 获取居家康复服务列表
+    this.getHomeList()
   }
 })

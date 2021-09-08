@@ -10,12 +10,28 @@ WXPage({
     user: "",
     statusnum1: "",
     statusnum: "",
-    statusnum2: ""
+    statusnum2: "",
+    isLogin: false
   },
 
   goFile() {
     var _this = this
 
+    // 判断是否登录
+    if (this.data.isLogin == false) {
+      wx.showToast({
+        title: "请先登录",
+        icon: "none",
+        duration: 1000
+      })
+      setTimeout(function () {
+        console.log("doSomething")
+        wx.reLaunch({
+          url: "/pages/loginzfb/loginzfb"
+        })
+      }, 1000)
+      return
+    }
     wx.request({
       url: "https://www.xiaohulaile.com/xh/p/wxcx/my/archive",
       //仅为示例，并非真实的接口地址
@@ -30,6 +46,7 @@ WXPage({
       },
 
       success(res) {
+        console.log(res)
         console.log(res.data.code)
 
         if (res.data.code == 1) {
@@ -48,8 +65,30 @@ WXPage({
       }
     })
   },
-
+  // 跳转登录
+  goLogin() {
+    console.log('跳转登录~~~')
+    wx.navigateTo({
+      url: "/pages/loginzfb/loginzfb"
+    })
+  },
   goOurder(e) {
+
+    // 判断是否登录
+    if (this.data.isLogin == false) {
+      wx.showToast({
+        title: "请先登录",
+        icon: "none",
+        duration: 1000
+      })
+      setTimeout(function () {
+        console.log("doSomething")
+        wx.reLaunch({
+          url: "/pages/loginzfb/loginzfb"
+        })
+      }, 1000)
+      return
+    }
     console.log(e.currentTarget.dataset.id)
     wx.navigateTo({
       url: `/pages/order/order?index=${e.currentTarget.dataset.id}`
@@ -79,6 +118,11 @@ WXPage({
       success: () => {
         console.log("111")
       }
+    })
+  },
+  gosurvey() {
+    wx.navigateTo({
+      url: '../survey/survey',
     })
   },
   /**
@@ -122,10 +166,12 @@ WXPage({
                   url: "/pages/loginzfb/loginzfb"
                 })
               }, 1000)
+              return
             }
 
             _this.setData({
-              user: res.data.data
+              user: res.data.data,
+              isLogin: true
             })
           }
         })
@@ -223,18 +269,18 @@ WXPage({
         })
       },
       fail(res) {
-        console.log(res)
-        wx.showToast({
-          title: "请先登录",
-          icon: "none",
-          duration: 1000
-        })
-        setTimeout(function () {
-          console.log("doSomething")
-          wx.reLaunch({
-            url: "/pages/loginzfb/loginzfb"
-          })
-        }, 1000)
+        // console.log(res)
+        // wx.showToast({
+        //   title: "请先登录",
+        //   icon: "none",
+        //   duration: 1000
+        // })
+        // setTimeout(function () {
+        //   console.log("doSomething")
+        //   wx.reLaunch({
+        //     url: "/pages/loginzfb/loginzfb"
+        //   })
+        // }, 1000)
       }
     })
   },
@@ -242,7 +288,7 @@ WXPage({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {},
+  onReady: function () { },
 
   /**
    * 生命周期函数--监听页面显示
@@ -404,25 +450,25 @@ WXPage({
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {},
+  onHide: function () { },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {},
+  onUnload: function () { },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {},
+  onPullDownRefresh: function () { },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {},
+  onReachBottom: function () { },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {}
+  onShareAppMessage: function () { }
 })

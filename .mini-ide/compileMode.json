@@ -33,6 +33,23 @@
     {
       "title": "fill",
       "page": "pages/fill/Fill"
+    },
+    {
+      "title": "预约服务",
+      "page": "pages/appointment/appointment"
+    },
+    {
+      "title": "长护险评估",
+      "page": "pages/survey/survey"
+    },
+    {
+      "title": "长护险评估2",
+      "page": "pages/cfxform/cfxform"
+    },
+    {
+      "title": "新闻详情",
+      "page": "pages/message_details/message_details",
+      "pageQuery": "id=4"
     }
   ]
 }

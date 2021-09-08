@@ -1,6 +1,6 @@
 <view class="index subwe_1iXb3f">
   <view class="index_1">
-    小护来了 专业居家照护平台
+    小护来了 出院我也可以放心了
   </view>
   <view class="index_top">
     <image class="index_top_1" src="https://www.xiaohulaile.com/wxcx/ditu.png">
@@ -14,8 +14,7 @@
     </input>
   </view>
   <view class="I_swiper">
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="rgba(0, 0, 0, .3)" 
-      circular="true" indicator-active-color="#000000">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="rgba(0, 0, 0, .3)" circular="true" indicator-active-color="#000000">
       <block>
         <swiper-item>
           <image src="http://www.xiaohulaile.com/wxcx/banner/4.png" onTap="tobanner1">
@@ -69,9 +68,9 @@
             皮下注射</view></view></view></view> -->
 
     <!-- 去除专业护理、生活照料模块 -->
-    
+
     <view class="top">
-      
+
     </view>
     <view class="hlOne" a:if="{{professionlist.length>0}}">
       <view class="bottom_Jujia1">
@@ -88,8 +87,8 @@
         </view>
       </view>
     </view>
-    
-    <view class="hlTwo">
+
+    <view class="hlTwo" a:if="{{list.length>0}}">
       <view class="bottom_Jujia">
         临床护理
       </view>
@@ -104,7 +103,22 @@
         </view>
       </view>
     </view>
-    
+    <view class="hlTwo" a:if="{{homelist.length>0}}">
+      <view class="bottom_Jujia">
+        居家康复
+      </view>
+      <view class="bottom_mx2">
+        <view class="bottom_mx_1" a:for="{{homelist}}" a:key="{{index}}" onTap="goOrder" data-id="{{item.id}}">
+          <image class="bottom_mx_img" src="{{item.zy_pic}}"></image>
+          <view class="bottom_mx_title">{{item.title}}</view>
+          <view class="bottom_mx_price">
+            <view style="float:left;">￥{{item.price}}</view>
+            <view style="font-size:22rpx;float:left;line-height:38rpx">.00</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
     <view class="hlThree">
       <view class="bottom_Jujia_1">
         明星服务团队
@@ -114,7 +128,7 @@
         </image>
       </view>
     </view>
-    
+
   </view>
   <view style="width:750rpx;height:70rpx;line-height: 70rpx; text-align:center;font-size:28rpx;color:#ccc;background-color:#fff">
     目前服务范围：上海

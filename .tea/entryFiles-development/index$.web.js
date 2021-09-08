@@ -28,3 +28,5 @@ require('../../pages/aboutus/aboutus?hash=32d7d2807ed4e666ef03b4b3fe8c38ecf2e34e
 require('../../pages/scancode/scancode?hash=32d7d2807ed4e666ef03b4b3fe8c38ecf2e34e68');
 require('../../pages/start/start?hash=32d7d2807ed4e666ef03b4b3fe8c38ecf2e34e68');
 require('../../pages/ledge/ledge?hash=32d7d2807ed4e666ef03b4b3fe8c38ecf2e34e68');
+require('../../pages/cfxform/cfxform?hash=32d7d2807ed4e666ef03b4b3fe8c38ecf2e34e68');
+require('../../pages/survey/survey?hash=32d7d2807ed4e666ef03b4b3fe8c38ecf2e34e68');

@@ -1,4 +1,5 @@
 {
-  "ignoreHttpDomainCheck": true,
-  "enableDistFileMinify": false
+  "ignoreHttpDomainCheck": false,
+  "enableDistFileMinify": false,
+  "ignoreWebViewDomainCheck": false
 }

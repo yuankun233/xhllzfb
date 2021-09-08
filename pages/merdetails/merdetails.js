@@ -1,39 +1,38 @@
-import wx from '../../subwe/bridge';
-import WXPage from "../../subwe/page";
+import wx from "../../subwe/bridge"
+import WXPage from "../../subwe/page"
 // pages/merdetails/merdetails.js
 WXPage({
   /**
    * 页面的初始数据
    */
   data: {
-    user: '',
-    list: ''
+    user: "",
+    list: ""
   },
   back: function () {
-    wx.navigateBack({});
+    wx.navigateBack({})
   },
   daohang: function () {
-    let _this = this;
+    let _this = this
 
     wx.getLocation({
-      type: 'gcj02',
+      type: "gcj02",
 
       //返回可以用于wx.openLocation的经纬度
       success(res) {
-        const latitude = parseInt(_this.data.list.latitude);
-        const longitude = parseInt(_this.data.list.longitude);
-        const name = _this.data.list.name;
-        const address = _this.data.list.address;
+        const latitude = parseInt(_this.data.list.latitude)
+        const longitude = parseInt(_this.data.list.longitude)
+        const name = _this.data.list.name
+        const address = _this.data.list.address
         wx.openLocation({
           latitude,
           longitude,
           name,
           address,
           scale: 18
-        });
+        })
       }
-
-    });
+    })
   },
 
   goSpecialty() {
@@ -41,55 +40,37 @@ WXPage({
     //   url: '/pages/specialty/specialty',
     // });
     wx.makePhoneCall({
-      phoneNumber: '4009155291'
-    });
+      phoneNumber: "4009155291"
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options);
+    console.log(options)
 
-    let _this = this;
+    let _this = this
 
-    wx.getStorage({
-      key: 'user',
+    wx.request({
+      url: "https://www.xiaohulaile.com/xh/p/wxcx/nursing/get_data",
+      header: {
+        "content-type": "application/json" // 默认值
+      },
+      data: {
+        nursing_id: options.id
+      },
 
       success(res) {
-        console.log(res.data);
+        console.log(res)
 
         _this.setData({
-          user: res.data
-        });
+          list: res.data.data
+        })
 
-        wx.request({
-          url: 'https://www.xiaohulaile.com/xh/p/wxcx/nursing/get_data',
-          header: {
-            'content-type': 'application/json' // 默认值
-
-          },
-          data: {
-            user_token: res.data.user_token,
-            nursing_id: options.id
-          },
-
-          success(res) {
-            {
-              console.log(res);
-
-              _this.setData({
-                list: res.data.data
-              });
-
-              console.log(_this.data.list);
-            }
-          }
-
-        });
+        console.log(_this.data.list)
       }
-
-    });
+    })
   },
 
   /**
@@ -126,4 +107,4 @@ WXPage({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {}
-});
+})

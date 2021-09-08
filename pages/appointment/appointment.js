@@ -1,5 +1,6 @@
 import wx from "../../subwe/bridge"
 import WXPage from "../../subwe/page"
+import { $myrequest1 } from "../../utils/request1"
 // pages/appointment/appointment.js
 WXPage({
   /**
@@ -16,15 +17,52 @@ WXPage({
       url: `/pages/order/order_eight/order_eight?index=${e.currentTarget.dataset.id}`
     })
   },
+  async getList() {
+    wx.showLoading({
+      title: "加载中...",
+      mask: true
+    })
+    const token = this.data.user.user_token
+    console.log(token)
+    // 获取预约服务列表
+    const res = await $myrequest1({
+      url: "/project/get_list",
+      data: {
+        user_token: token
+      }
+    })
+    wx.hideLoading()
+    console.log(res)
+    // token过期，重新登录
+    if (res.message == "请重新登录") {
+      wx.showToast({
+        title: "请重新登录",
+        icon: "none",
+        duration: 1000
+      })
+      setTimeout(() => {
+        wx.reLaunch({
+          url: "/pages/loginzfb/loginzfb"
+        })
+
+      }, 1000)
+      return
+
+    }
+    let serve = res.data
+
+
+    // 储存到data
+    this.setData({
+      list: serve
+    })
+
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.showLoading({
-      title: "加载中..."
-    })
-
     var _this = this
 
     wx.getStorage({
@@ -32,42 +70,12 @@ WXPage({
 
       success(res) {
         console.log(res.data)
-
+        // 存到data
         _this.setData({
           user: res.data
         })
-
-        wx.request({
-          url: "https://www.xiaohulaile.com/xh/p/wxcx/project/get_list",
-          header: {
-            "content-type": "application/json" // 默认值
-          },
-          data: {
-            user_token: res.data.user_token
-          },
-
-          success(res) {
-            console.log(res, "看看是啥")
-            if (res.data.message == "请重新登录") {
-              wx.showToast({
-                title: "请先登录",
-                icon: "none",
-                duration: 1000
-              })
-              setTimeout(function () {
-                console.log("doSomething")
-                wx.reLaunch({
-                  url: "/pages/loginzfb/loginzfb"
-                })
-              }, 1000)
-            }
-            _this.setData({
-              list: res.data.data
-            })
-
-            wx.hideLoading()
-          }
-        })
+        // 获取列表
+        _this.getList()
       },
       fail(res) {
         console.log("请求失败")
@@ -76,12 +84,14 @@ WXPage({
           icon: "none",
           duration: 1000
         })
-        setTimeout(function () {
-          console.log("doSomething")
+
+        setTimeout(() => {
           wx.reLaunch({
-            url: "/pages/login/login"
+            url: "/pages/loginzfb/loginzfb"
           })
+
         }, 1000)
+
         return
       }
     })

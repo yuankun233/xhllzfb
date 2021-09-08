@@ -1,13 +1,13 @@
 <view class="my subwe_Z2dmkWW">
   <view class="my_top">
-    <view class="my_head">
-      <image src="{{user.head_logo}}">
+    <view class="my_head" onTap="{{isLogin?'':'goLogin'}}">
+      <image src="{{isLogin?user.head_logo:'../../images/unlogin.png'}}">
       </image>
     </view>
     <view class="my_DLL">
     </view>
-    <view class="username">
-      {{user.nickname}}
+    <view class="username" onTap="{{isLogin?'':'goLogin'}}">
+      {{isLogin?user.nickname:'登录/注册'}}
     </view>
     <view class="my_top_1">
       <view class="my_top_11 Tleft">
@@ -106,21 +106,16 @@
     </view>
   </view>
   <view class="my_bottom">
-    <!-- <view class="my_bottom_1">
-      <image src="https://www.xiaohulaile.com/wxcx/gou2 (4).png"></image>
-      <view> 投诉与建议</view>
-    </view> -->
+    <!--<view class="my_bottom_1"><image src="https://www.xiaohulaile.com/wxcx/gou2 (4).png"></image><view> 投诉与建议</view></view> -->
     <view onTap="goSpecialtys" class="my_bottom_1">
       <image src="https://www.xiaohulaile.com/wxcx/gou2 (5).png"></image>
       <view style="font-family:PingFangSC-Regular;"> 小护知识</view>
     </view>
-    <view
-      onTap="goSpecialty"
-      class="my_bottom_1"
-      style="border-top:1rpx solid #ccc"
-    >
+    <view onTap="goSpecialty" class="my_bottom_1" style="border-top:1rpx solid #ccc">
       <image src="https://www.xiaohulaile.com/wxcx/gou2 (3).png"></image>
       <view style="font-family:PingFangSC-Regular;"> 常见问答</view>
     </view>
+    <!--<view onTap="gosurvey" class="my_bottom_1" style="border-top:1rpx solid #ccc"><image src="../../images/survey.png"></image><view style="font-family:PingFangSC-Regular;"> 长护险自我评估表</view></view> -->
   </view>
+  <!-- <button size="default" type="primary" class="exitLogin">退出登录</button> -->
 </view>
