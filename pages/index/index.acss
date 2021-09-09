@@ -1,19 +1,22 @@
 page {
   background: #ffffff;
 }
+
 .index .index_1 {
-  font-size: 40rpx;
-  color: #4178f0;
-  font-weight: 800;
-  /* margin-top: 13%; */
+  font-size: 36rpx;
+  color: #4178F0;
+  font-weight: 500;
   margin-left: 14rpx;
+  font-family: PingFang SC;
 }
+
 .index .index_top {
   width: 100%;
   height: 60rpx;
   margin-top: 39rpx;
   position: relative;
 }
+
 .index .index_top .index_top_1 {
   width: 34rpx;
   height: 35rpx;
@@ -21,6 +24,7 @@ page {
   left: 14rpx;
   top: 13rpx;
 }
+
 .index .index_top .index_top_2 {
   position: absolute;
   width: 256rpx;
@@ -36,6 +40,7 @@ page {
   text-overflow: ellipsis;
   /*超出部分文字以...显示*/
 }
+
 .index .index_top .index_top_3 {
   width: 16rpx;
   height: 10rpx;
@@ -43,6 +48,7 @@ page {
   top: 25rpx;
   left: 328rpx;
 }
+
 .index .index_top .index_top_4 {
   width: 31rpx;
   height: 31rpx;
@@ -50,6 +56,7 @@ page {
   top: 15rpx;
   left: 325rpx;
 }
+
 .index .index_top .index_top_5 {
   width: 363rpx;
   height: 56rpx;
@@ -60,21 +67,25 @@ page {
   right: 14rpx;
   padding-left: 60rpx;
 }
+
 .index .I_swiper {
   width: 691rpx;
   height: 294rpx;
   margin: 0 auto;
   margin-top: 24rpx;
 }
+
 .index .I_swiper image {
   width: 100%;
   height: 100%;
 }
+
 .index .index_bottom {
   margin-top: 32rpx;
   width: 100%;
   position: relative;
 }
+
 .index .index_bottom .index_bottom_AA {
   width: 338rpx;
   height: 154rpx;
@@ -83,12 +94,14 @@ page {
   position: absolute;
   box-shadow: 0px 0px 8px rgba(38, 93, 213, 0.15);
 }
+
 .index .index_bottom .index_bottom_AA image {
   width: 100rpx;
   height: 99rpx;
   margin-top: 28rpx;
   margin-left: 36rpx;
 }
+
 .index .index_bottom .index_bottom_AA .zy {
   color: #1a1a1a;
   font-size: 34rpx;
@@ -97,6 +110,7 @@ page {
   right: 34rpx;
   top: 38rpx;
 }
+
 .index .index_bottom .index_bottom_AA .zy_1 {
   color: #656565;
   font-size: 24rpx;
@@ -104,12 +118,15 @@ page {
   bottom: 45rpx;
   right: 31rpx;
 }
+
 .index .index_bottom .index_bottom_1 {
   left: 30rpx;
 }
+
 .index .index_bottom .index_bottom_2 {
   right: 29rpx;
 }
+
 .index .index_bottom .bottom_Jujia {
   width: 287rpx;
   height: 35rpx;
@@ -123,6 +140,7 @@ page {
   font-size: 34rpx;
   line-height: 30rpx;
 }
+
 .index .index_bottom .bottom_Jujia1 {
   width: 287rpx;
   height: 35rpx;
@@ -136,6 +154,7 @@ page {
   font-size: 34rpx;
   line-height: 30rpx;
 }
+
 .index .index_bottom .bottom_mx2 {
   /* position: absolute; */
   /* top: 490rpx; */
@@ -154,6 +173,7 @@ page {
   /*实现子元素不换行*/
   /* overflow-y: hidden; */
 }
+
 .index .index_bottom .bottom_mx2 .bottom_mx_1 {
   display: inline-block;
   width: 216rpx;
@@ -163,15 +183,19 @@ page {
   margin-right: 21rpx;
   /* margin-right: 30rpx; */
 }
+
 /* 解决当服务项目是2，5,8,11....个的对齐问题 */
+
 .index .index_bottom .bottom_mx2 .bottom_mx_1:nth-child(3n) {
   margin-right: unset;
 }
+
 .index .index_bottom .bottom_mx2 .bottom_mx_1 .bottom_mx_img {
   width: 216rpx;
   height: 216rpx;
   border-radius: 15rpx;
 }
+
 .index .index_bottom .bottom_mx2 .bottom_mx_1 .bottom_mx_title {
   width: 230rpx;
   height: 35rpx;
@@ -182,6 +206,7 @@ page {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .index .index_bottom .bottom_mx2 .bottom_mx_1 .bottom_mx_price {
   width: 216rpx;
   height: 35rpx;
@@ -190,19 +215,24 @@ page {
   margin-top: 7rpx;
   color: #ff6c00;
 }
+
 .top {
   width: 100%;
   height: 185rpx;
 }
+
 .index .index_bottom .hlOne {
   width: 100%;
 }
+
 .index .index_bottom .hlTwo {
   width: 100%;
 }
+
 .index .index_bottom .hlThree {
   width: 100%;
 }
+
 .index .index_bottom .bottom_mx2_1 {
   width: 691rpx;
   /* height: 310rpx; */
@@ -212,6 +242,7 @@ page {
   flex-wrap: wrap;
   /* justify-content: space-between; */
 }
+
 .index .index_bottom .bottom_mx2_1 .bottom_mx_1 {
   display: inline-block;
   width: 216rpx;
@@ -221,15 +252,19 @@ page {
   margin-right: 21rpx;
   /* margin-right: 30rpx; */
 }
+
 /* 解决当服务项目是2，5,8,11....个的对齐问题 */
+
 .index .index_bottom .bottom_mx2_1 .bottom_mx_1:nth-child(3n) {
   margin-right: unset;
 }
+
 .index .index_bottom .bottom_mx2_1 .bottom_mx_1 .bottom_mx_img {
   width: 216rpx;
   height: 216rpx;
   border-radius: 15rpx;
 }
+
 .index .index_bottom .bottom_mx2_1 .bottom_mx_1 .bottom_mx_title {
   width: 230rpx;
   height: 35rpx;
@@ -240,6 +275,7 @@ page {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .index .index_bottom .bottom_mx2_1 .bottom_mx_1 .bottom_mx_price {
   width: 216rpx;
   height: 35rpx;
@@ -248,6 +284,7 @@ page {
   margin-top: 7rpx;
   color: #ff6c00;
 }
+
 .index .index_bottom .bottom_Jujia_1 {
   width: 287rpx;
   height: 35rpx;
@@ -259,6 +296,7 @@ page {
   font-size: 34rpx;
   line-height: 30rpx;
 }
+
 .index .index_bottom .bottom_ckgd_1 {
   font-size: 24rpx;
   color: #666666;
@@ -266,6 +304,7 @@ page {
   top: 524rpx;
   right: 14rpx;
 }
+
 .index .index_bottom .bottom_mx {
   width: 750rpx;
   /* height: 242rpx; */
@@ -278,6 +317,7 @@ page {
   /*实现子元素不换行*/
   overflow-y: hidden;
 }
+
 .index .index_bottom .bottom_mx .bottom_mx_1 {
   display: inline-block;
   width: 338rpx;
@@ -285,18 +325,22 @@ page {
   margin-right: 20rpx;
   box-shadow: 0px 0px 8px rgba(38, 93, 213, 0.18);
 }
+
 .AA {
   color: #e6e6e6;
   font-size: 24rpx;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
+
 .bottom_box {
   width: 638rpx;
   display: flex;
   justify-content: space-between;
 }
+
 .bottom_box1 {
   width: 303rpx;
   display: flex;

@@ -174,7 +174,7 @@
       <!--<view>护士上门已备好基础的医疗耗材，如您需要特殊耗材，请自备。上门护理需至少一名家人居家陪同看护，为了您的权益保障，请在小程序上付款。</view> -->
 
     </view>
-    <image src="https://xiaohulaile.com/wxcx/tuikuan/tuikuan.png" style="width:662rpx;height:602rpx;margin-left:18rpx">
+    <image src="http://xiaohulaile.com/wxcx/tuikuan/tuikuan.png" style="width:662rpx;height:602rpx;margin-left:18rpx">
       
       </view>
       <view class="cu-modal {{modalName=='Modal'?'show':''}}">

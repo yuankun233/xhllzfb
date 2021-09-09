@@ -42,6 +42,7 @@ WXPage({
     my.getAuthCode({
       scopes: ["auth_base"],
       success: ({ authCode }) => {
+        console.log('Code',authCode)
         var item = authCode
         //登录
         _this.setData({
