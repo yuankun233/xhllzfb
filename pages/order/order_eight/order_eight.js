@@ -545,6 +545,7 @@ WXPage({
         project_id: _this.data.eightList.id,
         num: _this.data.nums,
         total_amount:_this.data.total_fee,
+        // total_amount:0.01,
         archive_id: _this.data.archive_id,
         time_slot: _this.data.time_slot,
         content: _this.data.text,

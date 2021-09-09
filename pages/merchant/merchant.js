@@ -46,20 +46,7 @@ WXPage({
           success(res) {
             console.log(res)
             // return
-            if (res.data.message == "请重新登录") {
-              console.log(res, 111111)
-              wx.showToast({
-                title: "请先登录",
-                icon: "none",
-                duration: 1000
-              })
-              setTimeout(function () {
-                console.log("doSomething")
-                wx.reLaunch({
-                  url: "/pages/loginzfb/loginzfb"
-                })
-              }, 1000)
-            }
+            
 
             _this.setData({
               list: res.data.data
