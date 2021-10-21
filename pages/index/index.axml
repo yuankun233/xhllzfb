@@ -1,136 +1,102 @@
-<view class="index subwe_1iXb3f">
-  <view class="index_1">
-    小护来了 出院我也可以放心了
-  </view>
-  <view class="index_top">
-    <image class="index_top_1" src="https://www.xiaohulaile.com/wxcx/ditu.png">
-    </image>
-    <view class="index_top_2">
-      {{address}}
+<view class="indexBox">
+  <view class="top">
+    <!-- 背景图片 -->
+    <view class="backImg"></view>
+    <!-- 定位图标 -->
+    <view class="location">
+      <view> <image src="../../images/syImage/dztb.png"></image>
+      </view>
+      <view>{{address}}</view>
+       
     </view>
-    <image class="index_top_4" src="https://www.xiaohulaile.com/wxcx/sosuo.png">
-    </image>
-    <input class="index_top_5" placeholder="可搜索服务项目..." placeholder-class="AA" cursor-spacing="10" type="text">
-    </input>
+    <!-- 搜索框 -->
+    <view class="seek">
+      <view>
+        <image src="../../images/syImage/sousuo1.png"></image>
+      </view>
+      <view><input type="text" placeholder="股骨颈术后" /></view>
+    </view>
   </view>
+  <!-- 标题 -->
+  <view class="titleXh">小护来了,出院我也可以放心了！</view>
+  <!-- 轮播图 -->
   <view class="I_swiper">
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="rgba(0, 0, 0, .3)" circular="true" indicator-active-color="#000000">
+    <swiper autoplay="true" interval="5000" duration="500" circular="true" indicator-active-color="#000000"
+      indicator-color="rgba(0, 0, 0, .3)">
       <block>
         <swiper-item>
-          <image src="http://www.xiaohulaile.com/wxcx/banner/4.png" onTap="tobanner1">
-          </image>
+          <image src="../../images/syImage/banner.png" onTap="tobanner1"></image>
         </swiper-item>
       </block>
       <block>
         <swiper-item>
-          <image src="http://www.xiaohulaile.com/wxcx/banner/5.png" onTap="tobanner2">
-          </image>
+          <image src="../../images/syImage/banner.png" onTap="tobanner2"></image>
         </swiper-item>
       </block>
       <block>
         <swiper-item>
-          <image src="http://www.xiaohulaile.com/wxcx/banner/2.png" onTap="tobanner3">
-          </image>
+          <image src="../../images/syImage/banner.png" onTap="tobanner3"></image>
         </swiper-item>
       </block>
     </swiper>
   </view>
-  <view class="index_bottom">
-    <view class="index_bottom_1 index_bottom_AA" onTap="goSpecialty">
-      <image src="https://www.xiaohulaile.com/wxcx/tel.png">
-      </image>
-      <view class="zy">
-        专业解答
+  <!-- 功能 -->
+  <view class="func">
+    <view a:for="{{funlist}}" a:key="item" onTap="goSpecialty" data-id="{{index}}">
+      <view>
+        <image src="{{item.img}}"></image>
       </view>
-      <view class="zy_1">
-        专业人员解答
-      </view>
+      <view>{{item.title}}</view>
+      <view>{{item.mes}}</view>
     </view>
-    <view class="index_bottom_2 index_bottom_AA" onTap="goAppointment">
-      <image src="https://www.xiaohulaile.com/wxcx/doct.png">
-      </image>
-      <view class="zy">
-        预约服务
-      </view>
-      <view class="zy_1">
-        按需求找服务
-      </view>
-    </view>
-    <!--<view class="bottom_Jujia">
-      居家护理服务项目</view><view class="bottom_ckgd" onTap="goAppointment">
-      查看更多></view> -->
-    <!--<view class="bottom_8"><view class="flexbox1"><view data-id="30" class="bottom_8_A" onTap="go_eight"><image class="amg_1" src="https://www.xiaohulaile.com/wxcx/icon/jirouzhushe.png"></image><view>
-            肌肉注射</view></view><view data-id="13" class="bottom_8_A" onTap="go_eight"><image class="amg_2" src="https://www.xiaohulaile.com/wxcx/icon/chouxue.png"></image><view>
-            静脉采血</view></view><view data-id="32" class="bottom_8_A" onTap="go_eight"><image class="amg_3" src="https://www.xiaohulaile.com/wxcx/icon/dngm.png"></image><view>
-            导尿(男)</view></view><view data-id="33" class="bottom_8_A" onTap="go_eight"><image class="amg_4" src="https://www.xiaohulaile.com/wxcx/icon/dngw.png"></image><view>
-            导尿(女)</view></view></view><view class="flexbox2"><view data-id="16" class="bottom_8_A" onTap="go_eight"><image class="amg_5" src="https://www.xiaohulaile.com/wxcx/icon/shangkou.png"></image><view>
-            伤口换药</view></view><view data-id="35" class="bottom_8_A" onTap="go_eight"><image class="amg_6" src="https://www.xiaohulaile.com/wxcx/icon/yidaosu.png"></image><view>
-            皮下注射</view></view></view></view> -->
-
-    <!-- 去除专业护理、生活照料模块 -->
-
-    <view class="top">
-
-    </view>
-    <view class="hlOne" a:if="{{professionlist.length>0}}">
-      <view class="bottom_Jujia1">
-        专科护理
-      </view>
-      <view class="bottom_mx2_1">
-        <view class="bottom_mx_1" a:for="{{professionlist}}" a:key="{{index}}" onTap="goOrder" data-id="{{item.id}}">
-          <image class="bottom_mx_img" src="{{item.zy_pic}}"></image>
-          <view class="bottom_mx_title">{{item.title}}</view>
-          <view class="bottom_mx_price">
-            <view style="float:left;">￥{{item.price}}</view>
-            <view style="font-size:22rpx;float:left;line-height:38rpx">.00</view>
-          </view>
-        </view>
-      </view>
-    </view>
-
-    <view class="hlTwo" a:if="{{list.length>0}}">
-      <view class="bottom_Jujia">
-        临床护理
-      </view>
-      <view class="bottom_mx2">
-        <view class="bottom_mx_1" a:for="{{list}}" a:key="{{index}}" onTap="goOrder" data-id="{{item.id}}">
-          <image class="bottom_mx_img" src="{{item.zy_pic}}"></image>
-          <view class="bottom_mx_title">{{item.title}}</view>
-          <view class="bottom_mx_price">
-            <view style="float:left;">￥{{item.price}}</view>
-            <view style="font-size:22rpx;float:left;line-height:38rpx">.00</view>
-          </view>
-        </view>
-      </view>
-    </view>
-    <view class="hlTwo" a:if="{{homelist.length>0}}">
-      <view class="bottom_Jujia">
-        居家康复
-      </view>
-      <view class="bottom_mx2">
-        <view class="bottom_mx_1" a:for="{{homelist}}" a:key="{{index}}" onTap="goOrder" data-id="{{item.id}}">
-          <image class="bottom_mx_img" src="{{item.zy_pic}}"></image>
-          <view class="bottom_mx_title">{{item.title}}</view>
-          <view class="bottom_mx_price">
-            <view style="float:left;">￥{{item.price}}</view>
-            <view style="font-size:22rpx;float:left;line-height:38rpx">.00</view>
-          </view>
-        </view>
-      </view>
-    </view>
-
-    <view class="hlThree">
-      <view class="bottom_Jujia_1">
-        明星服务团队
-      </view>
-      <view class="bottom_mx">
-        <image src="{{item.map}}" class="bottom_mx_1" onTap="gostart" data-nurseid='{{item.id}}' a:for="{{nurseList}}">
-        </image>
-      </view>
-    </view>
-
   </view>
-  <view style="width:750rpx;height:70rpx;line-height: 70rpx; text-align:center;font-size:28rpx;color:#ccc;background-color:#fff">
-    目前服务范围：上海
+  <!-- 专科护理 -->
+  <view class="nurseTitle"><text>专科护理</text><text onTap="goSpecialty" data-id="2">更多服务 ></text></view>
+  <view class="zkNurse">
+    <view onTap="goOrder" data-id="3">
+      <image src="../../images/syImage/fmtx.png"></image>
+      <view class="zkNurse_1">腹膜透析</view>
+      <view class="zkNurse_2">查看详情 ></view>
+      <view class="zkNurse_3">258/次</view>
+    </view>
+    <view>
+      <view onTap="goOrder" data-id="1" class="zkNurseRight">
+        <image src="../../images/syImage/picc.png"></image>
+        <view class="zkNurse_1">PICC</view>
+      </view>
+      <view onTap="goOrder" data-id="2" class="zkNurseRight">
+        <image src="../../images/syImage/zkhl.png"></image>
+        <view class="zkNurseRight_2">造口护理</view>
+      </view>
+    </view>
+  </view>
+  <!-- 服务团队 -->
+  <view class="nurseTitle">服务团队</view>
+  <view class="nurseTeam">
+    <view onTap="goMes" data-id="0"  style="position: relative;">
+      <image src="../../images/syImage/hzjg.png"></image>
+      <view class="zkNurse_1">合作机构</view>
+    </view>
+    <view onTap="goMes" data-id="1"  style="position: relative;">
+      <image src="../../images/syImage/mxhs.png"></image>
+      <view class="zkNurse_1">明星护士</view>
+    </view>
+  </view>
+
+  <view class="nurseTitle">大家都在问</view>
+  <view>
+    <view class="wdMes" a:for="{{wdlist}}" a:key="item">
+      <view>
+        <image src="{{item.img1}}"></image>
+      </view>
+      <view>{{item.mes1}}</view>
+    </view>
+  </view>
+  <!-- 服务保障 -->
+  <view class="pledge">
+    <view>服务保障</view>
+    <view>审核严格</view>
+    <view>专业问诊</view>
+    <view>流程规范</view>
   </view>
 </view>

@@ -1,5 +1,5 @@
-import wx from "../../subwe/bridge"
-import WXPage from "../../subwe/page"
+import wx from '../../subwe/bridge';
+import WXPage from "../../subwe/page";
 // pages/fill/Fill.js
 WXPage({
   /**
@@ -13,45 +13,67 @@ WXPage({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.showLoading({
-      title: "加载中...",
-      mask: true
-    })
-    var _this = this
-    // 获取协议
+    var _this = this;
+
     wx.request({
-      url: "https://www.xiaohulaile.com/xh/p/xcx/Tagreement/index",
+      url: 'https://www.xiaohulaile.cn/xh/p/xcx/Tagreement/index',
       method: "POST",
-      dataType: "json",
+      dataType: 'json',
       header: {
-        "content-type": "application/x-www-form-urlencoded"
+        'content-type': 'application/x-www-form-urlencoded'
       },
 
       success(res) {
-        wx.hideLoading()
-        console.log(res.data.data)
+        console.log(res.data.data);
 
         if (res.data.code == 0) {
           _this.setData({
             agreement: res.data.data
-          })
+          });
         } else if (res.data.code == 1) {
           wx.showToast({
             title: "服务器繁忙",
-            icon: "none",
+            icon: 'none',
             duration: 2000
-          })
+          });
         }
-      },
-      fail(){
-        wx.hideLoading()
-        console.log('获取失败')
-        wx.showToast({
-          title: "服务器繁忙",
-          icon: "none",
-          duration: 2000
-        })
       }
-    })
-  }
-})
+
+    });
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {},
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {},
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {},
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {},
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {},
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {},
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {}
+});
