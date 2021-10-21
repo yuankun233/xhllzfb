@@ -70,7 +70,7 @@
           <image class="img_3" src="https://www.xiaohulaile.com/wxcx/gou2.png">
           </image>
           <view>
-            待评价
+            已完成
           </view>
           <view class="jiaobiao2" a:if="{{statusnum2 > 0}}">
             {{statusnum2}}

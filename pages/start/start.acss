@@ -1,5 +1,5 @@
 page {
-  background-color: #e9eefa;
+  background-color: #E9EEFA;
 }
 .merdetails {
   overflow: hidden;
@@ -7,18 +7,10 @@ page {
 .merdetails .backgroundimg {
   width: 750rpx;
   height: 700rpx;
-  position: absolute;
+  /* position: absolute; */
   z-index: -1;
 }
-.merdetails .top {
-  width: 750rpx;
-  height: 50rpx;
-  margin-top: 107rpx;
-  text-align: center;
-  padding-left: 14rpx;
-  padding-right: 14rpx;
-  line-height: 50rpx;
-}
+
 .merdetails .top image {
   width: 22rpx;
   height: 37rpx;
@@ -29,34 +21,33 @@ page {
   height: 37rpx;
   font-size: 37rpx;
   font-family: PingFang;
-  font-weight: normal;
-
-  color: #ffffff;
+  font-weight: bold;
+  color: #FFFFFF;
 }
 .merdetails .list {
-  box-sizing: border-box;
-  width: 730rpx;
-  height: hidden;
+
+
   background-color: #fff;
   margin: 0 auto;
-  margin-top: 101rpx;
   border-radius: 15rpx;
   box-shadow: 0px 0px 8px rgba(38, 93, 213, 0.19);
-  overflow: hidden;
+
   padding: 0 49rpx 0 49rpx;
+  margin-top: -475rpx;
   margin-bottom: 30rpx;
+  z-index: 99;
 }
 .merdetails .list .list_pic {
   width: 156rpx;
   height: 160rpx;
   border-radius: 50%;
   position: absolute;
-  top: 40rpx;
+  top: 200rpx;
   left: 49rpx;
 }
 .merdetails .list .list_top_left {
   overflow: hidden;
-  margin-left: 450rpx;
+  margin-left: 181rpx;
 }
 .merdetails .list .list_top_left .list_name image {
   width: 176rpx;
@@ -73,53 +64,44 @@ page {
   margin-top: 52rpx;
 }
 .merdetails .list .detil .detilname {
-  margin-bottom: 30rpx;
-  display: flex;
-  align-items: center;
   margin-top: 70rpx;
   height: 70rpx;
   font-size: 52rpx;
   font-family: PingFang SC;
-  font-weight: normal;
+  font-weight: bold;
   color: #333333;
+  margin-left: 20rpx;
 }
 .merdetails .list .detil .detilname .detilxm {
   height: 26rpx;
   font-size: 28rpx;
   font-family: PingFang SC;
-  font-weight: normal;
+  font-weight: 500;
   color: #333333;
   margin-left: 36rpx;
 }
 .merdetails .list .detil .detiltype {
-  display: flex;
-  align-items: center;
+  margin-top: 31rpx;
 }
 .merdetails .list .detil .detiltype image {
   width: 109rpx;
   height: 25rpx;
-  margin-right: 30rpx;
 }
 .merdetails .list .detil .detiltype span {
-
   height: 30srpx;
-  font-size: 28rpx;
+  font-size: 33.6rpx;
   font-family: PingFang SC;
-  font-weight: normal;
-
+  font-weight: 500;
   color: #333333;
   margin-left: 36rpx;
 }
 .merdetails .list .detil .detilcontent {
   font-size: 28.8rpx;
   font-family: PingFang SC;
-  font-weight: normal;
-
+  font-weight: 500;
   margin-top: 22rpx;
 }
 .merdetails .list .detil .detilbottom {
-  display: flex;
-  align-items: center;
   height: 50rpx;
   overflow: hidden;
   margin-top: 60rpx;
@@ -138,37 +120,30 @@ page {
   border-radius: 15rpx;
   box-shadow: 0px 0px 8px rgba(38, 93, 213, 0.19);
   overflow: hidden;
-  box-sizing: border-box;
-  padding: 30rpx 49rpx 30rpx 49rpx;
+  padding: 0 49rpx 0 49rpx;
   margin-bottom: 30rpx;
 }
 .merdetails .xm .xm1 {
-  position: relative;
-  padding: 10rpx 0 10rpx;
-  display: flex;
-  align-items: center;
+  width: 631rpx;
+  height: 100rpx;
+  margin-top: 36rpx;
 }
-.merdetails .xm .xm1 .image {
+.merdetails .xm .xm1 .imagespan {
+  float: left;
+  margin-top: 9rpx;
 }
-.merdetails .xm .xm1 image {
+.merdetails .xm .xm1 .imagespan image {
   width: 93rpx;
   height: 64rpx;
 }
 .merdetails .xm .xm1 .xmname {
   margin-left: 17rpx;
-
-}
-.xmname .flex{
-  display: flex;
-  white-space: nowrap;
+  float: left;
 }
 .merdetails .xm .xm1 .godetil {
-  position: absolute;
-  right: 0;
-  top: 0;
   width: 148rpx;
   height: 51rpx;
-  background: #4178f0;
+  background: #4178F0;
   border-radius: 26px 25px 25px 25px;
   float: right;
   text-align: center;

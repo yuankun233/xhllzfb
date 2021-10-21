@@ -1,53 +1,44 @@
-// pages/start/start.js
+// pages/nurseList/nurseList.js
+
 import wx from '../../subwe/bridge';
 import WXPage from "../../subwe/page";
-import {$myRequestThree} from '../../utils/qyyRequestThree'
+// pages/nurseList/nurseList.js
+import {
+  $myRequestTwo
+} from '../../utils/qyyRequestTwo'
 WXPage({
+
   /**
    * 页面的初始数据
    */
   data: {
-    nurseList:'',
-    img:''
+    nurseList:[],//数据
+    text:""//简介
   },
-  back:function(){
-    wx.navigateBack({})
-  },
- async getnurseList(res) {
-  const resList = await $myRequestThree({
-      url:'attendant/api/starteam',
-      data:{
-        bianhao: res
+  //封装护士列表
+  async getList() {
+    const res = await $myRequestTwo({
+      url: 'attendant/api/starteam',
+      data: {
       }
-  })
-  this.setData({
-    nurseList:resList[0]
-  })
-  console.log(resList);
-  if(resList[0].zhicheng == '护师'){
-      this.setData({
-        img:'https://www.xiaohulaile.com/xh/p/doc/hushi2.png'
-      })
-  }else if (resList[0].zhicheng == '护士') {
-    this.setData({
-      img:'https://www.xiaohulaile.com/xh/p/doc/hushi1.png'
     })
-  }else if (resList[0].zhicheng == '主管护师') {
+    console.log(res,'护士列表接口')
     this.setData({
-      img:'https://www.xiaohulaile.com/xh/p/doc/zhuguanhushi.png'
+      nurseList: res
     })
-  }
-},
+  },
+  //跳转护士详情
+  goNurseMes(e) {
+    wx.navigateTo({
+      url: `../start/start?id=${e.currentTarget.dataset.id}`,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.showLoading({
-      title: '加载中...',
-    })
-    wx.hideLoading()
-    console.log(options);
-    this.getnurseList(options.id);
+    //获取护士列表
+    this.getList()
   },
 
   /**
@@ -63,6 +54,7 @@ WXPage({
   onShow: function () {
 
   },
+
   /**
    * 生命周期函数--监听页面隐藏
    */
@@ -74,7 +66,6 @@ WXPage({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
   },
 
   /**

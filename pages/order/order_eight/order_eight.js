@@ -9,7 +9,7 @@ WXPage({
     times: [
       {
         id: 1,
-        time: "08:00-12:00"
+        time: "07:00-12:00"
       },
       {
         id: 2,
@@ -545,6 +545,7 @@ WXPage({
         project_id: _this.data.eightList.id,
         num: _this.data.nums,
         total_amount: _this.data.total_fee,
+        // total_amount: 0.01,
         archive_id: _this.data.archive_id,
         time_slot: _this.data.time_slot,
         content: _this.data.text,
@@ -553,7 +554,8 @@ WXPage({
         start_time: _this.data.data,
         my_id: _this.data.users.my_id,
         consumables_num: _this.data.numes,
-        consumables: _this.data.eightList.pid
+        consumables: _this.data.eightList.pid,
+        tid:101
       },
 
       success(res) {

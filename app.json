@@ -21,7 +21,8 @@
     "pages/aboutus/aboutus",
     "pages/scancode/scancode",
     "pages/start/start",
-    "pages/ledge/ledge"
+    "pages/ledge/ledge",
+    "pages/nurseList/nurseList"
   ],
   "permission": {
     "scope.userLocation": {

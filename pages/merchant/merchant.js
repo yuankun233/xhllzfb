@@ -16,7 +16,7 @@ WXPage({
    * 生命周期函数--监听页面加载
    */
   navto: function (option) {
-    console.log(option.currentTarget.id);
+    console.log(option.currentTarget.id,"aaaaaaaaaaaaaaa");
     wx.navigateTo({
       url: '/pages/merdetails/merdetails?id=' + option.currentTarget.id
     });

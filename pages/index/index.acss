@@ -1,305 +1,248 @@
-page {
-  background: #ffffff;
+.titleXh{
+  margin-top: 36rpx;
+  margin-left: 30rpx;
+  font-size: 36rpx;
+  font-weight: 500;
+  color: #41D9CD;
 }
-.index .index_1 {
-  font-size: 40rpx;
-  color: #4178f0;
-  font-weight: 800;
-  /* margin-top: 13%; */
-  margin-left: 14rpx;
+.I_swiper{
+  width: 690rpx;
+  margin-left:30rpx;
+  margin-top: 28rpx;
 }
-.index .index_top {
-  width: 100%;
-  height: 60rpx;
-  margin-top: 39rpx;
-  position: relative;
+.I_swiper swiper{
+  height: 240rpx;
 }
-.index .index_top .index_top_1 {
-  width: 34rpx;
-  height: 35rpx;
-  position: absolute;
-  left: 14rpx;
-  top: 13rpx;
-}
-.index .index_top .index_top_2 {
-  position: absolute;
-  width: 256rpx;
-  height: 26rpx;
-  font-size: 24rpx;
-  line-height: 23rpx;
-  left: 56rpx;
-  top: 20rpx;
-  overflow: hidden;
-  /*超出部分隐藏*/
-  white-space: nowrap;
-  /*不换行*/
-  text-overflow: ellipsis;
-  /*超出部分文字以...显示*/
-}
-.index .index_top .index_top_3 {
-  width: 16rpx;
-  height: 10rpx;
-  position: absolute;
-  top: 25rpx;
-  left: 328rpx;
-}
-.index .index_top .index_top_4 {
-  width: 31rpx;
-  height: 31rpx;
-  position: absolute;
-  top: 15rpx;
-  left: 325rpx;
-}
-.index .index_top .index_top_5 {
-  width: 363rpx;
-  height: 56rpx;
-  border: 1px solid #d6d6d6;
-  border-radius: 28rpx;
-  position: absolute;
-  top: 0;
-  right: 14rpx;
-  padding-left: 60rpx;
-}
-.index .I_swiper {
-  width: 691rpx;
-  height: 294rpx;
-  margin: 0 auto;
-  margin-top: 24rpx;
-}
-.index .I_swiper image {
+.I_swiper image {
   width: 100%;
   height: 100%;
 }
-.index .index_bottom {
-  margin-top: 32rpx;
-  width: 100%;
+.func{
+  display: flex;
+  width: 580rpx;
+  margin-left: 84rpx;
+  margin-top: 60rpx;
+  text-align: center;
+  justify-content: space-between;
+}
+.func view image{
+  width: 124rpx;
+  height: 100rpx;
+}
+.func view:nth-child(2){
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #000000;
+}
+.func view:nth-child(3){
+  font-size: 20rpx;
+  color: #999999;
+  /* font-weight:lighter; */
+}
+.nurseTitle {
+  font-size:36rpx ;
+  color: #333333;
+  font-weight:500 ;
+  width: 690rpx;
+  margin-top: 36rpx;
+  margin-left: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.nurseTitle text:nth-child(2){
+  font-size:24rpx ;
+  color: #999999;
+  font-weight: lighter;
+  margin-top: 10rpx;
+}
+.zkNurse {
+  margin-left: 30rpx;
+  margin-top: 16rpx;
+  display: flex;
+  width: 690rpx;
+  justify-content: space-between;
+}
+.zkNurse >view:nth-child(1){
+  width: 330rpx;
+  height: 330rpx;
+  background: #F4F9FF;
+  position: relative;
+  
+} 
+.zkNurse >view:nth-child(1) image{
+  width:100%;
+  height:100%;
+  background: #F4F9FF;
+} 
+.zkNurse >view:nth-child(2){
+  width: 330rpx;
+  height: 330rpx;
   position: relative;
 }
-.index .index_bottom .index_bottom_AA {
-  width: 338rpx;
-  height: 154rpx;
-  border-radius: 16rpx;
-  /* background-color: rgba(38, 93, 213); */
-  position: absolute;
-  box-shadow: 0px 0px 8px rgba(38, 93, 213, 0.15);
+.zkNurse >view:nth-child(2)>view{
+  width:330rpx;
+  height: 150rpx;
 }
-.index .index_bottom .index_bottom_AA image {
-  width: 100rpx;
-  height: 99rpx;
-  margin-top: 28rpx;
-  margin-left: 36rpx;
+.zkNurse >view:nth-child(2) image{
+  width: 100%;
+  height: 100%;
 }
-.index .index_bottom .index_bottom_AA .zy {
-  color: #1a1a1a;
-  font-size: 34rpx;
-  font-weight: 900;
-  position: absolute;
-  right: 34rpx;
-  top: 38rpx;
+.zkNurse >view:nth-child(2)>view:nth-child(2){
+  margin-top: 30rpx;
 }
-.index .index_bottom .index_bottom_AA .zy_1 {
-  color: #656565;
-  font-size: 24rpx;
-  position: absolute;
-  bottom: 45rpx;
-  right: 31rpx;
-}
-.index .index_bottom .index_bottom_1 {
-  left: 30rpx;
-}
-.index .index_bottom .index_bottom_2 {
-  right: 29rpx;
-}
-.index .index_bottom .bottom_Jujia {
-  width: 287rpx;
-  height: 35rpx;
-  border-left: 5rpx solid #265dd5;
-  /* position: absolute; */
-  margin-left: 14rpx;
-  /* top: 521rpx; */
-  color: #333333;
-  font-weight: 900;
-  padding-left: 10rpx;
-  font-size: 34rpx;
-  line-height: 30rpx;
-}
-.index .index_bottom .bottom_Jujia1 {
-  width: 287rpx;
-  height: 35rpx;
-  border-left: 5rpx solid #265dd5;
-  /* position: absolute; */
-  margin-left: 14rpx;
-  /* top: 142rpx; */
-  color: #333333;
-  font-weight: 900;
-  padding-left: 10rpx;
-  font-size: 34rpx;
-  line-height: 30rpx;
-}
-.index .index_bottom .bottom_mx2 {
-  /* position: absolute; */
-  /* top: 490rpx; */
-  width: 691rpx;
-  /* height: 660rpx; */
-  margin-left: 29rpx;
-  margin-top: 20rpx;
+.nurseTeam {
+  margin-left: 30rpx;
+  margin-top: 32rpx;
   display: flex;
-  flex-wrap: wrap;
-  /* justify-content: space-between; */
-  /* padding-left: 14rpx; */
-  /* justify-content: left; */
-  /* overflow-x: auto; */
-  /*x轴超出后可滚动*/
-  /* white-space: nowrap; */
-  /*实现子元素不换行*/
-  /* overflow-y: hidden; */
+  width: 690rpx;
+  justify-content: space-between;
 }
-.index .index_bottom .bottom_mx2 .bottom_mx_1 {
-  display: inline-block;
-  width: 216rpx;
-  height: 300rpx;
-  /* 列表1item样式 */
-  margin-bottom: 20rpx;
-  margin-right: 21rpx;
-  /* margin-right: 30rpx; */
+.nurseTeam>view {
+  width: 330rpx;
+  height: 150rpx;
+  background: #F4F9FF;
+  border-radius: 8rpx;
 }
-/* 解决当服务项目是2，5,8,11....个的对齐问题 */
-.index .index_bottom .bottom_mx2 .bottom_mx_1:nth-child(3n) {
-  margin-right: unset;
-}
-.index .index_bottom .bottom_mx2 .bottom_mx_1 .bottom_mx_img {
-  width: 216rpx;
-  height: 216rpx;
-  border-radius: 15rpx;
-}
-.index .index_bottom .bottom_mx2 .bottom_mx_1 .bottom_mx_title {
-  width: 230rpx;
-  height: 35rpx;
-  font-family: PingFangSC-Regular;
-  font-size: 27rpx;
-  overflow: hidden;
-  font-weight: 600;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.index .index_bottom .bottom_mx2 .bottom_mx_1 .bottom_mx_price {
-  width: 216rpx;
-  height: 35rpx;
-  font-size: 28rpx;
-  font-family: PingFangSC-Regular;
-  margin-top: 7rpx;
-  color: #ff6c00;
-}
-.top {
+.nurseTeam view image{
   width: 100%;
-  height: 185rpx;
+  height: 100%;
 }
-.index .index_bottom .hlOne {
-  width: 100%;
-}
-.index .index_bottom .hlTwo {
-  width: 100%;
-}
-.index .index_bottom .hlThree {
-  width: 100%;
-}
-.index .index_bottom .bottom_mx2_1 {
-  width: 691rpx;
-  /* height: 310rpx; */
-  margin-left: 29rpx;
-  margin-top: 20rpx;
+.wdMes{
+  margin-top: 36rpx;
   display: flex;
-  flex-wrap: wrap;
-  /* justify-content: space-between; */
-}
-.index .index_bottom .bottom_mx2_1 .bottom_mx_1 {
-  display: inline-block;
-  width: 216rpx;
-  height: 300rpx;
-  /* 列表2item样式 */
-  margin-bottom: 20rpx;
-  margin-right: 21rpx;
-  /* margin-right: 30rpx; */
-}
-/* 解决当服务项目是2，5,8,11....个的对齐问题 */
-.index .index_bottom .bottom_mx2_1 .bottom_mx_1:nth-child(3n) {
-  margin-right: unset;
-}
-.index .index_bottom .bottom_mx2_1 .bottom_mx_1 .bottom_mx_img {
-  width: 216rpx;
-  height: 216rpx;
-  border-radius: 15rpx;
-}
-.index .index_bottom .bottom_mx2_1 .bottom_mx_1 .bottom_mx_title {
-  width: 230rpx;
-  height: 35rpx;
-  font-family: PingFangSC-Regular;
-  font-size: 27rpx;
-  overflow: hidden;
-  font-weight: 600;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.index .index_bottom .bottom_mx2_1 .bottom_mx_1 .bottom_mx_price {
-  width: 216rpx;
-  height: 35rpx;
-  font-size: 28rpx;
-  font-family: PingFangSC-Regular;
-  margin-top: 7rpx;
-  color: #ff6c00;
-}
-.index .index_bottom .bottom_Jujia_1 {
-  width: 287rpx;
-  height: 35rpx;
-  border-left: 5rpx solid #265dd5;
-  margin-left: 14rpx;
-  color: #333333;
-  font-weight: 900;
-  padding-left: 10rpx;
-  font-size: 34rpx;
-  line-height: 30rpx;
-}
-.index .index_bottom .bottom_ckgd_1 {
+  margin-left: 30rpx;
   font-size: 24rpx;
+  font-weight: 500;
+  color: #000000;
+  width: 690rpx;
+}
+.wdMes image{
+  width: 37rpx;
+  height: 37rpx;
+}
+.wdMes view:nth-child(2){
+  margin-left: 22rpx;
+  width: 620rpx;
+}
+.wdMes:nth-child(2){
+  padding-bottom: 20rpx;
+  border-bottom:4rpx solid #0000001A ;
+}
+.pledge {
+  width: 690rpx;
+  height: 70rpx;
+  background: #F4F4F4;
+  border-radius: 8rpx;
+  padding: 0rpx 26rpx 0rpx 26rpx;
+  margin-left: 30rpx;
+  margin-top: 52rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.pledge view {
+  flex: 1;
+  text-align: center;
+  line-height: 70rpx;
   color: #666666;
+  font-size: 28rpx;
+}
+.pledge view:nth-child(1){
+  font-weight: 500;
+  color: #000000;
+}
+.zkNurse_1{
   position: absolute;
-  top: 524rpx;
-  right: 14rpx;
+  top: 24rpx;
+  left: 24rpx;
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #686767;
 }
-.index .index_bottom .bottom_mx {
-  width: 750rpx;
-  /* height: 242rpx; */
-  padding-left: 14rpx;
-  margin-top: 20rpx;
-  justify-content: left;
-  overflow-x: auto;
-  /*x轴超出后可滚动*/
-  white-space: nowrap;
-  /*实现子元素不换行*/
-  overflow-y: hidden;
+.zkNurse_2{
+  width: 130rpx;
+  height: 36rpx;
+  border-radius: 10rpx;
+  background: #46A2FF;
+  position: absolute;
+  text-align: center;
+  line-height: 36rpx;
+  top: 82rpx;
+  left: 24rpx;
+  font-size: 16rpx;
+  color: #FFFFFF;
 }
-.index .index_bottom .bottom_mx .bottom_mx_1 {
-  display: inline-block;
-  width: 338rpx;
-  height: 241rpx;
-  margin-right: 20rpx;
-  box-shadow: 0px 0px 8px rgba(38, 93, 213, 0.18);
+.zkNurse_3{
+  position: absolute;
+  top: 120rpx;
+  left: 24rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: red;
 }
-.AA {
-  color: #e6e6e6;
+.zkNurseRight_2{
+	position: absolute;
+	top: 200rpx;
+	left: 24rpx;
+	font-size: 34rpx;
+	font-weight: 500;
+	color: #686767;
+}
+.indexBox {
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  padding-bottom: 20rpx;
+  box-shadow:  0rpx -20rpx  25rpx -20rpx #cfcece inset;
+}
+.top{
+  height: 200rpx;
+}
+.backImg {
+  position: absolute;
+  width: 100%;
+  height: 200rpx;
+  left: 0rpx;
+  top: 0rpx;
+  background: #41D9CD;
+  border-radius: 0px 0px 20px 20px;
+}
+.location{
+  position: absolute;
+  top: 92rpx;
+  left: 40rpx;
+}
+.location view image{
+  width: 40rpx;
+  height: 46rpx;
+  margin-left: 7rpx;
+}
+.location view:nth-child(2){
   font-size: 24rpx;
+  color: #FFFFFF;
+  text-align: center;
 }
-::-webkit-scrollbar {
-  display: none;
+.seek{
+  position: absolute;
+  top: 94rpx;
+  left: 117rpx;
 }
-.bottom_box {
-  width: 638rpx;
-  display: flex;
-  justify-content: space-between;
+.seek view input{
+  width: 430rpx;
+  height: 76rpx;
+  background: #FFFFFF;
+  border-radius: 100rpx;
+  font-size: 34rpx;
+  line-height: 48rpx;
+  padding-left: 88rpx;
 }
-.bottom_box1 {
-  width: 303rpx;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20rpx;
+.seek view image{
+  width: 56rpx;
+  height: 56rpx;
+  position: absolute;
+  top: 12rpx;
+  left: 20rpx;
 }
+
+
+
+

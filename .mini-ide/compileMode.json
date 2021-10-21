@@ -33,6 +33,11 @@
     {
       "title": "fill",
       "page": "pages/fill/Fill"
+    },
+    {
+      "title": "明星护士",
+      "page": "pages/start/start",
+      "pageQuery": ""
     }
   ]
 }
