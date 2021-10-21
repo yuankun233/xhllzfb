@@ -18,7 +18,7 @@
     </view>
   </view>
   <!-- 标题 -->
-  <view class="titleXh">小护来了,出院我也可以放心了</view>
+  <view class="titleXh">小护来了,出院我也可以放心了！</view>
   <!-- 轮播图 -->
   <view class="I_swiper">
     <swiper autoplay="true" interval="5000" duration="500" circular="true" indicator-active-color="#000000"
