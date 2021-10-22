@@ -442,6 +442,7 @@ page {
   margin-top: 2rpx;
 }
 
+
 .subwe_Z1nO6TY.order_eight .order_eight_button_flexs,
 .subwe_Z1nO6TY .order_eight .order_eight_button_flexs {
   width: 750rpx;
@@ -684,6 +685,11 @@ page {
   color: #ffffff;
   line-height: 89rpx;
 }
+
+.modal_32:focus{
+  background-color: yellowgreen;
+}
+
 
 .subwe_Z1nO6TY .bottom_n {
   position: fixed;

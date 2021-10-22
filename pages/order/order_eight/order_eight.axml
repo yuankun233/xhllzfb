@@ -269,7 +269,7 @@
                         <image style="width:19rpx;height:12rpx; margin-left:10rpx;" src="{{mingxi == 1 ?'https://www.xiaohulaile.com/xh/p/up.png':'https://www.xiaohulaile.com/xh/p/down.png'}}">
                         </image>
                       </view>
-                      <view data-target="Modal" class="bottom_n37" onTap="showModal">
+                      <view data-target="Modal" class="bottom_n37" onTap="submitOrder">
                         提交订单
                       </view>
                     </view>
