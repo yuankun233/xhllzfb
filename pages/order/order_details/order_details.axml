@@ -88,7 +88,7 @@
     <view class="list_time" style="margin-top:25rpx;">
       总价
       <view class="time_right" ref="__subweSaveRef__">
-        <text style="font-size: 28rpx;font-family: PingFang SC;font-weight: 400;color: #4178F0;">
+        <text style="font-size: 28rpx;font-family: PingFang SC;font-weight: 400;color: #41D9CD;">
           ￥{{list.total_fee}}
         </text>
       </view>

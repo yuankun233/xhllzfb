@@ -36,32 +36,32 @@
     "defaultTitle": "Weixin"
   },
   "tabBar": {
-    "selectedColor": "#4178f0",
+    "selectedColor": "#41D9CD",
     "borderStyle": "white",
     "textColor": "#b2b2b2",
     "items": [
       {
         "pagePath": "pages/index/index",
-        "icon": "/images/index/1-1.png",
-        "activeIcon": "/images/index/1.png",
+        "icon": "/images/index/index.png",
+        "activeIcon":  "/images/index/index-active.png",
         "name": "首页"
       },
       {
         "pagePath": "pages/merchant/merchant",
-        "icon": "/images/index/2-1.png",
-        "activeIcon": "/images/index/2.png",
+        "icon": "/images/index/community.png",
+        "activeIcon": "/images/index/community-active.png",
         "name": "机构"
       },
       {
         "pagePath": "pages/message/message",
-        "icon": "/images/index/3.png",
-        "activeIcon": "/images/index/3-1.png",
+        "icon": "/images/index/information.png",
+        "activeIcon": "/images/index/information-active.png",
         "name": "健康"
       },
       {
         "pagePath": "pages/my/my",
-        "icon": "/images/index/4.png",
-        "activeIcon": "/images/index/4-1.png",
+        "icon":  "/images/index/my.png",
+        "activeIcon":"/images/index/my-active.png",
         "name": "我的"
       }
     ]

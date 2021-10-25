@@ -627,7 +627,6 @@ WXPage({
     })
 
     var _this = this
-
     wx.getStorage({
       key: "user",
 

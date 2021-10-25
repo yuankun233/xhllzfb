@@ -47,7 +47,7 @@
       </view>
       <view class="my_C_1">
         <view data-id="1" class="my_C_11" onTap="goOurder">
-          <image class="img_1" src="https://www.xiaohulaile.com/wxcx/gou4.png">
+          <image class="img_1" src="../../images/syImage/pay.png">
           </image>
           <view>
             待付款
@@ -57,7 +57,7 @@
           </view>
         </view>
         <view data-id="2" class="my_C_11" onTap="goOurder">
-          <image class="img_2" src="https://www.xiaohulaile.com/wxcx/gou3.png">
+          <image class="img_2" src="../../images/syImage/server.png">
           </image>
           <view>
             待服务
@@ -67,7 +67,7 @@
           </view>
         </view>
         <view data-id="3" class="my_C_11" onTap="goOurder">
-          <image class="img_3" src="https://www.xiaohulaile.com/wxcx/gou2.png">
+          <image class="img_3" src="../../images/syImage/Star.png">
           </image>
           <view>
             已完成
@@ -77,7 +77,7 @@
           </view>
         </view>
         <view data-id="0" class="my_C_11" onTap="goOurder">
-          <image class="img_4" src="https://www.xiaohulaile.com/wxcx/gou1.png">
+          <image class="img_4" src="../../images/syImage/order.png">
           </image>
           <view>
             全部订单
