@@ -119,7 +119,7 @@
 .subwe_Z2dmkWW.my .my_center .my_center_1 .my_order, .subwe_Z2dmkWW .my .my_center .my_center_1 .my_order {
   width: 169rpx;
   height: 36rpx;
-  border-left: 5rpx solid #265dd5;
+  border-left: 5rpx solid #41D9CD;
   text-align: center;
   font-size: 36rpx;
   font-family: PingFang-SC-Bold;
@@ -132,7 +132,7 @@
 .subwe_Z2dmkWW.my .my_center .my_center_1 .JKda, .subwe_Z2dmkWW .my .my_center .my_center_1 .JKda {
   width: 169rpx;
   height: 36rpx;
-  border-left: 5rpx solid #265dd5;
+  border-left: 5rpx solid #41D9CD;
   text-align: center;
   font-size: 36rpx;
   font-family: PingFang-SC-Bold;

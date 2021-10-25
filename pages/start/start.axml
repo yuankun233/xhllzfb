@@ -14,7 +14,7 @@
         <image src="http://www.xiaohulaile.com/xh/p/doc/startdoc.png"></image>
       </view>
     </view>
-    <view class="hr"></view>
+    <!-- <view class="hr"></view> -->
     <view class="detil">
       <view class="detilname" style="font-family:PingFang-SC-Medium;">{{nurseList.xingming}}</view>
       <view class="detiltype">

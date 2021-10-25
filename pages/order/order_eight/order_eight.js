@@ -55,6 +55,7 @@ WXPage({
   },
   //获取时间
   datePicker() {
+     wx.hideLoading()
     var datetime = new Date()
     var year = datetime.getFullYear() //获取完整的年份(4位,1970)
 
@@ -140,6 +141,7 @@ WXPage({
   },
 
   radioChange_1(e) {
+    wx.hideLoading()
     var _this = this
 
     console.log(
@@ -398,98 +400,47 @@ WXPage({
       text: e.detail.value
     })
   },
-
-  // 付钱了
-  payFn() {
-    var _this = this
-
+  // 提交订单
+  submitOrder() {
+    let _this = this
+    // 1 表单非空校验
     if (
-      _this.data.archive_id == "" ||
-      _this.data.data == "" ||
-      _this.data.time_slot == ""
+      _this.data.archive_id == ""
     ) {
       wx.showToast({
-        title: "请选择基本信息",
+        title: "请选择服务地址信息",
         icon: "none",
         duration: 2000
       })
       return
     }
-
-    if (_this.data.isPay) {
+    if (
+      _this.data.data == "请选择服务日期"
+    ) {
+      wx.showToast({
+        title: "请选择服务日期"
+        ,
+        icon: "none",
+        duration: 2000
+      })
       return
     }
-
-    _this.setData({
-      isPay: true
-    })
-
-    console.log("付钱")
-    wx.request({
-      url: "https://www.xiaohulaile.com/xh/p/wxcx/pay/pay",
-      header: {
-        "content-type": "application/x-www-form-urlencoded"
-      },
-      method: "post",
-      data: {
-        body: _this.data.eightList.title,
-        project_id: _this.data.eightList.id,
-        num: _this.data.nums,
-        total_fee: _this.data.total_fee,
-        archive_id: _this.data.archive_id,
-        time_slot: _this.data.time_slot,
-        content: _this.data.text,
-        minute: 1,
-        openid: _this.data.users.openid,
-        start_time: _this.data.data,
-        my_id: _this.data.users.my_id,
-        consumables_num: _this.data.numes,
-        consumables: _this.data.eightList.pid
-      },
-
-      success(res) {
-        console.log(res, "11")
-        console.log(res.data, "22")
-
-        _this.setData({
-          isPay: false
-        })
-
-        if (res.data.code == 0) {
-          wx.requestPayment({
-            timeStamp: res.data.data.timeStamp,
-            nonceStr: res.data.data.nonceStr,
-            package: res.data.data.package,
-            signType: res.data.data.signType,
-            paySign: res.data.data.paySign,
-
-            success(res) {
-              console.log(res, "成功")
-              wx.redirectTo({
-                url: "/pages/order/order?index=0"
-              })
-            },
-
-            fail(res) {
-              console.log(res)
-              wx.redirectTo({
-                url: "/pages/order/order?index=0"
-              })
-            }
-          })
-        } else if (res.data.code == 1) {
-          wx.showToast({
-            title: res.data.message,
-            icon: "none"
-          })
-        } else if (res.data.code == 2) {
-          wx.navigateTo({
-            url: "/pages/home/login/login"
-          })
-        }
-      }
+    if (
+      _this.data.time_slot == ""
+    ) {
+      wx.showToast({
+        title: "请选择被服务时间段",
+        icon: "none",
+        duration: 2000
+      })
+      return
+    }
+    // 2 弹出下单提示
+    this.setData({
+      modalName: "Modal"
     })
   },
+
   //支付宝
   payFnzfb() {
     var _this = this
@@ -555,7 +506,7 @@ WXPage({
         my_id: _this.data.users.my_id,
         consumables_num: _this.data.numes,
         consumables: _this.data.eightList.pid,
-        tid:101
+        tid: 101
       },
 
       success(res) {
@@ -676,7 +627,6 @@ WXPage({
     })
 
     var _this = this
-
     wx.getStorage({
       key: "user",
 
@@ -775,128 +725,31 @@ WXPage({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {},
+  onReady: function () { },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  // onShow: function () {
-  //   var _this = this
-
-  //   wx.getStorage({
-  //     key: "user",
-
-  //     success(res) {
-  //       console.log(res.data)
-
-  //       _this.setData({
-  //         user: res.data
-  //       })
-
-  //       wx.request({
-  //         url: "https://www.xiaohulaile.com/xh/p/wxcx/project/index",
-  //         header: {
-  //           "content-type": "application/json" // 默认值
-  //         },
-  //         method: "post",
-  //         data: {
-  //           id: _this.data.index,
-  //           user_token: res.data.user_token
-  //         },
-
-  //         success(res) {
-  //           if (res.data.message == "请重新登录") {
-  //             wx.hideLoading()
-  //             console.log(res, 111111)
-  //             wx.showToast({
-  //               title: "请先登录",
-  //               icon: "none",
-  //               duration: 1000
-  //             })
-  //             setTimeout(function () {
-  //               console.log("doSomething")
-  //               wx.reLaunch({
-  //                 url: "/pages/loginzfb/loginzfb"
-  //               })
-  //             }, 2000)
-  //           }
-
-  //           _this.setData({
-  //             eightList: res.data.data,
-  //             price: res.data.data.price,
-  //             p_price: res.data.data.p_price
-  //           })
-
-  //           _this.setData({
-  //             total_fee: _this.data.p_price + _this.data.price
-  //           })
-  //         }
-  //       })
-  //     },
-  //     fail(res) {
-  //       console.log(res)
-  //       wx.showToast({
-  //         title: "请先登录",
-  //         icon: "none",
-  //         duration: 1000
-  //       })
-  //       setTimeout(function () {
-  //         console.log("doSomething")
-  //         wx.reLaunch({
-  //           url: "/pages/loginzfb/loginzfb"
-  //         })
-  //       }, 1000)
-  //     }
-  //   })
-  //   var datetime = new Date()
-  //   var year = datetime.getFullYear() //获取完整的年份(4位,1970)
-
-  //   var month = datetime.getMonth() + 1 //获取月份(0-11,0代表1月,用的时候记得加上1)
-
-  //   if (month <= 9) {
-  //     month = "0" + month
-  //   }
-
-  //   var date = datetime.getDate() //获取日(1-31)
-
-  //   if (date <= 9) {
-  //     date = "0" + date
-  //   }
-
-  //   var dateformat = year + "-" + month + "-" + date
-  //   return
-  //   const query = wx.createSelectorQuery()
-  //   query.select(".order_eight_2").boundingClientRect()
-  //   query.selectViewport().scrollOffset()
-  //   query.exec(function (res) {
-  //     _this.setData({
-  //       scrollTops: res[0].top
-  //     })
-  //   })
-  // },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {},
+  onHide: function () { },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {},
+  onUnload: function () { },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {},
+  onPullDownRefresh: function () { },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {},
+  onReachBottom: function () { },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {}
+  onShareAppMessage: function () { }
 })

@@ -48,7 +48,7 @@ WXPage({
     wx.request({
       url: 'https://www.xiaohulaile.com/xh/p/wxcx/order/get_list',
       header: {
-        'content-type': 'application/json' // 默认值
+        'content-type': 'application' // 默认值
 
       },
       data: {
@@ -104,7 +104,7 @@ WXPage({
         wx.request({
           url: 'https://www.xiaohulaile.com/xh/p/wxcx/order/get_list',
           header: {
-            'content-type': 'application/json' // 默认值
+            'content-type': 'application' // 默认值
           },
           data: {
             user_token: res.data.user_token,
@@ -147,7 +147,7 @@ WXPage({
     wx.request({
       url: 'https://www.xiaohulaile.com/xh/p/wxcx/order/get_list',
       header: {
-        'content-type': 'application/json' // 默认值
+        'content-type': 'application' // 默认值
 
       },
       data: {
@@ -200,7 +200,7 @@ WXPage({
     wx.request({
       url: 'https://www.xiaohulaile.com/xh/p/wxcx/order/get_list',
       header: {
-        'content-type': 'application/json' //默认值
+        'content-type': 'application' //默认值
       },
       data: {
         user_token: _this.data.user.user_token,

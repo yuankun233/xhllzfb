@@ -214,10 +214,10 @@
               <!--<checkbox-group onChange="checkboxChange"><checkbox color="#39B54A" value="1"></checkbox></checkbox-group> -->
               <checkbox-group onChange="checkboxChange">
                 <label class="flex justify-between align-center flex-sub">
-                  <checkbox value="1" disabled="{{check}}" color="#39B54A">
+                  <checkbox value="1" disabled="{{check}}" color="##41D9C">
                     </label>
                     </checkbox-group>
-                    <view style="color:#4178f0">
+                    <view style="color:#41D9CD">
                       下滑至底并勾选、即同意“预约须知”
                     </view>
                     </view>
@@ -269,7 +269,7 @@
                         <image style="width:19rpx;height:12rpx; margin-left:10rpx;" src="{{mingxi == 1 ?'https://www.xiaohulaile.com/xh/p/up.png':'https://www.xiaohulaile.com/xh/p/down.png'}}">
                         </image>
                       </view>
-                      <view data-target="Modal" class="bottom_n37" onTap="showModal">
+                      <view data-target="Modal" class="bottom_n37" onTap="submitOrder">
                         提交订单
                       </view>
                     </view>

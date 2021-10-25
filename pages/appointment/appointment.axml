@@ -1,15 +1,82 @@
-<view class="appointment">
-  <view a:for="{{list}}" a:key="{{index}}" class="appointment_1" onTap="goOrder" data-id="{{item.id}}">
-    <image src="{{item.map}}"></image>
-    <view class="appointment_11">{{item.title}}</view>
-    <view class="appointment_3">
-      <image src="../../images/xingxing@2x.png"></image></view>
-    <view class="appointment_4">5.0评分</view>
-    <view class="appointment_5">|</view>
-    <view class="appointment_6">{{item.order_num}}人付款</view>
-    <view class="appointment_7">￥</view>
-    <view class="appointment_13">{{item.price}}</view>
-    <view class="appointment_15"></view>
-    <view class="appointment_16">预约</view>
-  </view>
-</view>
+<view class="body">
+		<!-- 专科列表 -->
+		<view class="list">
+			<view class="list_1">专科列表</view>
+			<view class="list_2"></view>
+			<view class="mar"></view>
+			<view class="list_3"  onTap="goOrder"
+			a:for="{{zkserveList}}"  a:key="{{item.id}}"
+			 data-id="{{item.id}}">
+				<view class="list_3_1">
+					<image src="{{item.zy_pic}}" mode="widthFix"></image>
+				</view>
+				<view class="list_3_2">
+					<view>{{item.title}}</view>
+					<view >
+						<view>
+							<image a:for="{{4}}" src="../../images/xingxing.png" mode="widthFix"></image>
+							<image src="../../images/xingxingwxz.png" mode="widthFix"></image>
+							<text>4.0评分</text>
+						</view>
+					</view>
+					<!-- <view>{{item.num}}人已付款</view> -->
+					<view>¥{{item.price}}</view>
+				</view>
+				<view class="list_3_3">查看详情</view>
+			</view>
+		</view>
+
+		<!-- 临床列表 -->
+		 <view class="list">
+			<view class="list_1">临床列表</view>
+			<view class="list_2"></view>
+			<view class="mar"></view>
+			<view class="list_3"  data-id="{{item.id}}" a:for="{{lcserveList}}" 
+			a:key="{{item.id}}" onTap="goOrder">
+				<view class="list_3_1">
+					<image src="{{item.zy_pic}}" mode="widthFix"></image>
+				</view>
+				<view class="list_3_2">
+					<view>{{item.title}}</view>
+					<view>
+						<view>
+							<image src="../../images/xingxing.png" mode="widthFix" a:for="{{4}}" a:key="this">
+							</image>
+							<image src="../../images/xingxingwxz.png" mode="widthFix"></image>
+							<text>4.0评分</text>
+						</view>
+					</view>
+					<!-- <view>{{item.serviceNum }}人已付款</view> -->
+					<view>¥{{item.price}}</view>
+				</view>
+				<view class="list_3_3">查看详情</view>
+			</view>
+		</view>
+
+		<!-- 居家康复 -->
+		<view class="list">
+			<view class="list_1">居家康复</view>
+			<view class="list_2"></view>
+			<view class="mar"></view>
+			<view class="list_3" a:for="{{jjserveList}}" a:key="{{item.id}}" 
+			onTap="goOrder" data-id="{{item.id}}">
+				<view class="list_3_1">
+					<image src="{{item.zy_pic}}" mode="widthFix"></image>
+				</view>
+				<view class="list_3_2">
+					<view>{{item.title}}</view>
+					<view>
+						<view>
+							<image a:for="{{4}}" src="../../images/xingxing.png" mode="widthFix">
+							</image>
+							<image src="../../images/xingxingwxz.png" mode="widthFix"></image>
+							<text>4.0评分</text>
+						</view>
+					</view>
+					<!-- <view>{{ item.serviceNum }}人已付款</view> -->
+					<view>¥{{ item.price }}</view>
+				</view>
+				<view class="list_3_3">查看详情</view>
+			</view>
+		</view>
+	</view>
